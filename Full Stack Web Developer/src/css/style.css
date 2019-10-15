@@ -5,6 +5,43 @@
   height: 1px;
   margin: 30px auto;
 }
+/* SECTION SERVICES START */
+.services {
+  background: #F5F5F5;
+  padding: 70px 0 80px 0;
+}
+.services-header {
+  text-align: center;
+  margin-bottom: 41px;
+}
+.services-header-title {
+  display: block;
+  font-size: 30px;
+  line-height: 136.5%;
+  letter-spacing: 0.23em;
+}
+.services-header-text {
+  display: block;
+  font-size: 16px;
+}
+.services-item {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(212, 212, 212, 0.5);
+          box-shadow: 0 0 10px rgba(212, 212, 212, 0.5);
+  padding: 26px 0 59px 0;
+  text-align: center;
+  background: #ffffff;
+}
+.services-item-pic {
+  margin-bottom: 31px;
+}
+.services-item-title {
+  font-size: 18px;
+  line-height: 136.5%;
+  letter-spacing: 0.23em;
+  margin-bottom: 47px;
+}
+/* SECTION SERVICES END */
 /* SECTION PFBLOCK START */
 .pfblock {
   background: #F5F5F5;
@@ -23,46 +60,9 @@
 .pfblock-header-text {
   display: block;
   font-size: 16px;
-}
-.pfblock-item {
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 10px rgba(212, 212, 212, 0.5);
-          box-shadow: 0 0 10px rgba(212, 212, 212, 0.5);
-  padding: 26px 0 59px 0;
-  text-align: center;
-  background: #ffffff;
-}
-.pfblock-item-pic {
-  margin-bottom: 31px;
-}
-.pfblock-item-title {
-  font-size: 18px;
-  line-height: 136.5%;
-  letter-spacing: 0.23em;
-  margin-bottom: 47px;
-}
-/* SECTION PFBLOCK END */
-/* SECTION CALLTOACTION START */
-.calltoaction {
-  background: #F5F5F5;
-  padding: 70px 0 80px 0;
-}
-.calltoaction-header {
-  text-align: center;
-  margin-bottom: 41px;
-}
-.calltoaction-header-title {
-  display: block;
-  font-size: 30px;
-  line-height: 136.5%;
-  letter-spacing: 0.23em;
-}
-.calltoaction-header-text {
-  display: block;
-  font-size: 16px;
   margin-bottom: 40px;
 }
-.calltoaction-item {
+.pfblock-item {
   -webkit-box-shadow: 0 0 10px rgba(212, 212, 212, 0.5);
           box-shadow: 0 0 10px rgba(212, 212, 212, 0.5);
   background-color: #ffffff;
@@ -70,7 +70,7 @@
   margin-bottom: 20px;
   text-align: center;
 }
-.calltoaction-down-text {
+.pfblock-down-text {
   margin: 0;
   margin-top: 10px;
   margin-bottom: 118px;
@@ -98,14 +98,14 @@
   color: #ffffff;
   font-size: 41px;
 }
-.calltoaction-down-title {
+.pfblock-down-title {
   margin: 0;
   font-size: 25px;
   line-height: 136.5%;
   text-align: center;
   letter-spacing: 0.23em;
 }
-.calltoaction-down-title-center {
+.pfblock-down-title-center {
   margin: 0;
   margin-bottom: 35px;
   font-size: 25px;
@@ -113,7 +113,7 @@
   text-align: center;
   letter-spacing: 0.23em;
 }
-.calltoaction-down-text-center {
+.pfblock-down-text-center {
   margin: 0;
   margin-bottom: 10px;
   font-size: 16px;
@@ -146,21 +146,64 @@
   color: #ffffff;
   font-size: 41px;
 }
+/* SECTION PFBLOCK END */
+/* SECTION CALLTOACRION START*/
+.calltoaction {
+  text-align: center;
+  padding: 70px 0 80px 0;
+  background-size: cover;
+  background: url(../img/item-3.jpg) center no-repeat;
+}
+.calltoaction-header-title {
+  font-size: 30px;
+  line-height: 136.5%;
+  text-align: center;
+  letter-spacing: 0.23em;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+.calltoaction-header-text {
+  font-size: 18px;
+  line-height: 136.5%;
+  text-align: center;
+  letter-spacing: 0.23em;
+  color: #FFFFFF;
+  margin-bottom: 70px;
+}
+.calltoaction-btn {
+  font-size: 18px;
+  line-height: 136.5%;
+  text-align: center;
+  letter-spacing: 0.23em;
+  color: #000;
+  margin: 5px 0 5px 0;
+  padding: 15px 30px;
+  background-color: #ffffff;
+}
+.calltoaction-header a {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.calltoaction-header a:hover {
+  background-color: #d7d7d7;
+  text-decoration: none;
+  color: #ffffff;
+}
 /* SECTION CALLTOACTION END */
 /* MEDIA */
 @media (max-width: 1199px) {
-  .pfblock-item-title {
+  .services-item-title {
     font-size: 15px;
   }
 }
 @media (max-width: 991px) {
-  .pfblock-item {
+  .services-item {
     margin-bottom: 2rem;
   }
-  .pfblock-header-title {
+  .services-header-title {
     font-size: 26px;
   }
-  .pfblock-header-text {
+  .services-header-text {
     font-size: 14px;
   }
 }
