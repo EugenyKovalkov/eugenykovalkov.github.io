@@ -5,11 +5,13 @@
 	<title>BlackPrice</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
 	<script src="https://use.fontawesome.com/39e0c1047c.js"></script>
 </head>
 <body>
 	<!-- SERVICES START  -->
-	<section class="services"> -->
+	<section class="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
@@ -63,7 +65,7 @@
 					<div class="pfblock-header">
 						<h2 class="pfblock-header-title">MY SKILLS</h2>
 						<div class="pfblock-header-line line"></div>
-				        <p class="pfblock-header-text">Where there's a will, there's a way</p>	
+				        <p class="pfblock-header-text">Where there's a will, there's a way.</p>	
 					</div>
 				</div>
 			</div>
@@ -127,6 +129,64 @@
 	</section>
 	<!-- CALLTOACTION END -->
 
+	<!-- TESTIMONIALS START -->
+	<section class="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="testimonials-header">
+						<h2 class="testimonials-header-title">WHAT MY CLIENTS SAY</h2>
+						<div class="testimonials-header-line line"></div>
+				        <p class="testimonials-header-text">Thanks to my customers.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="testimonials-slider">
+						<div>
+							<h4 class=slider-text>I'm really happy with the results. 
+							Get 100% satisfaction is difficult but Eugeny got it without problems.</h3>
+							<img src="" alt="">
+						</div>
+						<div>
+							<h4 class=slider-text>Work with Eugene was a pleasure. He understood exactly what I wanted and created an awesome site for me.</h3>
+							<img src="" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- TESTIMONIALS END-->
+
+	<!-- CONTACT START -->
+	<section class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="contact-header">
+						<h2 class="contact-header-title">DROP ME A LINE</h2>
+						<div class="contact-header-line line"></div>
+				        <p class="contact-header-text">Drop me a line say if your here.</p>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="contact-form">
+						<form class="form">
+							<input class="form-input" placeholder="Name" type="text">
+							<input class="form-input" placeholder="E-mail" type="text">
+							<textarea class="form-textarea" placeholder="Message" rows="5"></textarea>
+                            <button class="form-btn" type="submit">SEND MESSAGE</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- CONTACT END -->
 
 	<!-- FOOTER START -->
 	<footer class="footer">
@@ -148,6 +208,20 @@
 	</footer>
 	<!-- FOOTER END -->
 
-	
+	<!-- SCRIPT SLIDER START-->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <!-- SCRIPT SLIDER END -->
+    <script>
+    	$(document).ready(function(){
+  $('.testimonials-slider').slick({
+  	autoplay: true,
+  	autoplaySpeed: 5000,
+  	arrows : false,
+  });
+});
+    </script>
+
 </body>
 </html>
