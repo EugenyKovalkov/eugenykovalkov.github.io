@@ -128,13 +128,13 @@
 .portfolio {
   padding: 70px 0 80px 0;
 }
-.pfblock-header-title {
+.portfolio-header-title {
   font-size: 30px;
   line-height: 136.5%;
   text-align: center;
   letter-spacing: 0.23em;
 }
-.pfblock-header-text {
+.portfolio-header-text {
   font-size: 16px;
   line-height: 136.5%;
   text-align: center;
@@ -514,6 +514,30 @@
   .services-item-title {
     font-size: 15px;
   }
+  .portfolio-block-1 {
+    min-width: 300px;
+    min-height: 221px;
+  }
+  .portfolio-block-2 {
+    min-width: 300px;
+    min-height: 221px;
+  }
+  .portfolio-block-3 {
+    min-width: 300px;
+    min-height: 221px;
+  }
+  .portfolio-block-4 {
+    min-width: 300px;
+    min-height: 221px;
+  }
+  .portfolio-block-5 {
+    min-width: 300px;
+    min-height: 221px;
+  }
+  .portfolio-block-6 {
+    min-width: 300px;
+    min-height: 221px;
+  }
 }
 @media (max-width: 991px) {
   .services-item {
@@ -524,5 +548,32 @@
   }
   .services-header-text {
     font-size: 14px;
+  }
+  .portfolio-block-1 {
+    min-width: 225px;
+    min-height: 200px;
+  }
+  .portfolio-block-2 {
+    min-width: 225px;
+    min-height: 200px;
+  }
+  .portfolio-block-3 {
+    min-width: 225px;
+    min-height: 200px;
+  }
+  .portfolio-block-4 {
+    min-width: 225px;
+    min-height: 200px;
+  }
+  .portfolio-block-5 {
+    min-width: 225px;
+    min-height: 200px;
+  }
+  .portfolio-block-6 {
+    min-width: 225px;
+    min-height: 200px;
+  }
+  .portfolio-block-link {
+    font-size: 22px;
   }
 }
