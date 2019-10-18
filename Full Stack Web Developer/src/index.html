@@ -5,22 +5,24 @@
 	<title>BlackPrice</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
 	<script src="https://use.fontawesome.com/39e0c1047c.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
 	<!-- SECTION HOME START -->
-	<section class="home">
+	<section class="home" id="home">
 		<div class="container">
 			<div class="home-bg"></div>
-			<div class="home-intro">
+			<div class="home-intro wow fadeInUp" data-wow-delay="0.4s">
 				<div class="home-intro-text">Hello, my name is Eugeny Kovalkov and I am</div>
 				<h1 class="home-intro-title">FULL STACK WEB DEVELOPER</h1>
 				<div class="home-intro-text">creating modern and responsive Web Application</div>
 			</div>
 			<div class="home-scroll-round">
-				<a href="#" class="home-scroll">
+				<a href="#services" class="home-scroll">
 					<i class="fa fa-arrow-down" aria-hidden="true"></i>
 				</a>
 			</div>
@@ -39,12 +41,12 @@
 					</div>
 					<div class="col-md-9 offset-md-1">
 						<ul class="navbar-menu">
-							<li class="navbar-menu-link"><a href="#">HOME</a></li>
-							<li class="navbar-menu-link"><a href="#">SERVICES</a></li>
-							<li class="navbar-menu-link"><a href="#">WORKS</a></li>
-							<li class="navbar-menu-link"><a href="#">SKILLS</a></li>
-							<li class="navbar-menu-link"><a href="#">TESTIMONIALS</a></li>
-							<li class="navbar-menu-link"><a href="#">CONTACT</a></li>
+							<li class="navbar-menu-link"><a href="#home">HOME</a></li>
+							<li class="navbar-menu-link"><a href="#services">SERVICES</a></li>
+							<li class="navbar-menu-link"><a href="#portfolio">WORKS</a></li>
+							<li class="navbar-menu-link"><a href="#pfblock">SKILLS</a></li>
+							<li class="navbar-menu-link"><a href="#calltoaction">TESTIMONIALS</a></li>
+							<li class="navbar-menu-link"><a href="#contact">CONTACT</a></li>
 						</ul>
 					</div>	
 			</div>
@@ -53,11 +55,11 @@
 	<!-- HEADER END -->
 
 	<!-- SERVICES START  -->
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
-					<div class="services-header">
+					<div class="services-header wow fadeInUp" data-wow-delay="0.8s">
 						<h2 class="services-header-title">THIS IS WHAT I DO</h2>
 						<div class="services-header-line line"></div>
 				        <p class="services-header-text">Most good programmers do their job not because they expect payment or recognition,
@@ -67,28 +69,28 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
-					<div class="services-item">
+					<div class="services-item wow fadeInLeft" data-wow-delay="0.6s">
 						<img src="img/icon/Web design.svg" class="services-item-pic"width=82px; height=73px;  alt="Web design">
 					    <h6 class="services-item-title">WEB DESIGN</h6>
 					    <p class="services-item-word">Design is work</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="services-item">
+					<div class="services-item wow fadeInLeft" data-wow-delay="0.4s">
 						<img src="img/icon/Programming.svg" class="services-item-pic"width=82px; height=73px;  alt="Programming">
 					    <h6 class="services-item-title">WEB PROGRAMMING</h6>
 					    <p class="services-item-word">Works? Do not touch</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="services-item">
+					<div class="services-item wow fadeInRight" data-wow-delay="0.4s">
 						<img src="img/icon/Branding.svg" class="services-item-pic"width=82px; height=73px;  alt="Branding">
 					    <h6 class="services-item-title">BRANDING</h6>
 					    <p class="services-item-word">Brand is quality</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="services-item">
+					<div class="services-item wow fadeInRight" data-wow-delay="0.6s">
 						<img src="img/icon/Consultation.svg" class="services-item-pic"width=82px; height=73px;  alt="Consultation">
 					    <h6 class="services-item-title">CONSULTATION</h6>
 					    <p class="services-item-word">Brevity is the soul of wit</p>
@@ -100,11 +102,11 @@
 	<!-- SERVICES END -->
 
 	<!-- PORTFOLIO START -->
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
-					<div class="portfolio-header">
+					<div class="portfolio-header wow fadeInUp" data-wow-delay="0.4s">
 						<h2 class="portfolio-header-title">MY WORKS</h2>
 						<div class="portfolio-header-line line"></div>
 				        <p class="portfolio-header-text">Try to achieve the impossible if you want your work to be better.</p>	
@@ -113,32 +115,32 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-12">
-					<div class="portfolio-block-1">
+					<div class="portfolio-block-1 wow zoomIn" data-wow-delay="0.8s">
 						<a href="https://eugenykovalkov.github.io/Ali%20Sayed%20site%20on%20Grid%20CSS/src/index.html" class="portfolio-block-link">Ali Sayed</a>						
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
-					<div class="portfolio-block-2">
+					<div class="portfolio-block-2 wow zoomIn" data-wow-delay="0.8s">
 						<a href="https://eugenykovalkov.github.io/Full%20Stack%20Web%20Developer/src/index.html" class="portfolio-block-link">Web Developer</a>						
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
-					<div class="portfolio-block-3">
+					<div class="portfolio-block-3 wow zoomIn" data-wow-delay="0.8s">
 						<a href="https://eugenykovalkov.github.io/Travel%20Jacobvoyles%20with%20Figma/src/index.html" class="portfolio-block-link">Odigo</a>						
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
-					<div class="portfolio-block-4">
+					<div class="portfolio-block-4  wow zoomIn" data-wow-delay="0.8s">
 						<a href="https://eugenykovalkov.github.io/Github/Gipsolit%20site/scr/index.html" class="portfolio-block-link">Gipsolit</a>						
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
-					<div class="portfolio-block-5">
+					<div class="portfolio-block-5 wow zoomIn" data-wow-delay="0.8s">
 						<a href="https://eugenykovalkov.github.io/Github/RSE.by/index.html" class="portfolio-block-link">RSE</a>						
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
-					<div class="portfolio-block-6">
+					<div class="portfolio-block-6 wow zoomIn" data-wow-delay="0.8s">
 						<a href="https://eugenykovalkov.github.io/MDB%20site/index.html" class="portfolio-block-link">WDB</a>						
 					</div>
 				</div>						
@@ -148,11 +150,11 @@
 	<!-- PORTFOLIO END -->
 
 	<!-- PFBLOCK START -->
-	<section class="pfblock">
+	<section class="pfblock" id="pfblock">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
-					<div class="pfblock-header">
+					<div class="pfblock-header wow fadeInUp" data-wow-delay="0.4s">
 						<h2 class="pfblock-header-title">MY SKILLS</h2>
 						<div class="pfblock-header-line line"></div>
 				        <p class="pfblock-header-text">Where there's a will, there's a way.</p>	
@@ -161,7 +163,7 @@
 			</div>
 			<div class="row">
 				    <div class="col-lg-4 col-md-12">
-					<div class="pfblock-item">
+					<div class="pfblock-item wow fadeInDown" data-wow-delay="0.8s">
 						<p class="pfblock-down-text">Design is a branch of web development and a kind of design,
 						whose tasks include designing user web interfaces for sites 
 					    or web applications</p>
@@ -176,7 +178,7 @@
 					</div></div>
 
 					<div class="col-lg-4 col-md-12">
-						<div class="pfblock-item">
+						<div class="pfblock-item wow fadeInUp" data-wow-delay="0.8s">
 						<h5 class="pfblock-down-title-center">PROGRAMMING</h5>
 					    <div class="media-center">
 					    	<span class="circle-border-center">
@@ -189,7 +191,7 @@
 					</div>
 
 					<div class="col-lg-4 col-md-12">
-						<div class="pfblock-item">
+						<div class="pfblock-item wow fadeInDown" data-wow-delay="0.8s">
 						<p class="pfblock-down-text">The practice of using all aspects of traditional marketing on the Internet, with the goal of selling a product or service to customers</p>
 					        <div class="media">
 					    	<span class="circle-border">
@@ -204,14 +206,14 @@
 	<!-- PFBLOCK END -->
 
 	<!-- CALLTOACTION START-->
-	<section class="calltoaction">
+	<section class="calltoaction" id="calltoaction">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="calltoaction-header">
+					<div class="calltoaction-header wow fadeInRight" data-wow-delay="0.2s">
 						<h2 class="calltoaction-header-title">ARE YOU READY TO START?</h2>
 						<p class="calltoaction-header-text">I'm available for freelance projects.</p>
-						<a href="#" class="calltoaction-btn">Hire Me</a>
+						<a href="#contact" class="calltoaction-btn">Hire Me</a>
 					</div>
 				</div>
 			</div>
@@ -220,11 +222,11 @@
 	<!-- CALLTOACTION END -->
 
 	<!-- TESTIMONIALS START -->
-	<section class="testimonials">
+	<section class="testimonials" id="testimonials">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
-					<div class="testimonials-header">
+					<div class="testimonials-header wow fadeInUp" data-wow-delay="0.2s">
 						<h2 class="testimonials-header-title">WHAT MY CLIENTS SAY</h2>
 						<div class="testimonials-header-line line"></div>
 				        <p class="testimonials-header-text">Thanks to my customers.</p>
@@ -251,11 +253,11 @@
 	<!-- TESTIMONIALS END-->
 
 	<!-- CONTACT START -->
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
-					<div class="contact-header">
+					<div class="contact-header wow fadeInUp" data-wow-delay="0.4">
 						<h2 class="contact-header-title">DROP ME A LINE</h2>
 						<div class="contact-header-line line"></div>
 				        <p class="contact-header-text">Drop me a line say if your here.</p>	
@@ -265,11 +267,11 @@
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
 					<div class="contact-form">
-						<form class="form">
-							<input class="form-input" placeholder="Name" type="text">
-							<input class="form-input" placeholder="E-mail" type="text">
-							<textarea class="form-textarea" placeholder="Message" rows="5"></textarea>
-                            <button class="form-btn" type="submit">SEND MESSAGE</button>
+						<form action="mail.php" method="POST" class="form">
+							<input class="form-input wow fadeInUp" data-wow-delay="0.5s" name="user_name" placeholder="Name" type="text" required>
+							<input class="form-input wow fadeInUp" data-wow-delay="0.6s" name="e-mail" placeholder="E-mail" type="email" required>
+							<textarea class="form-textarea wow fadeInUp" data-wow-delay="0.7s" name="message" placeholder="Message" rows="5" required></textarea>
+                            <button class="form-btn wow fadeInUp" data-wow-delay="0.8s" type="submit">SEND MESSAGE</button>
 						</form>
 					</div>
 				</div>
@@ -279,16 +281,16 @@
 	<!-- CONTACT END -->
 
 	<!-- FOOTER START -->
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
 					<ul class="social-links">
-					 	<li><a href="https://vk.com/id140439300"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-					 	<li><a href="https://wa.me/<375292769473>"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-					 	<li><a href="mailto:eugenykovalkov@gmail.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-					 	<li><a href="https://t.me/black777price"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-					 	<li><a href="https://www.instagram.com/eugeny_kovalkov"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					 	<li class="wow fadeInUp" data-wow-delay="0.1s"><a href="https://vk.com/id140439300"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+					 	<li class="wow fadeInUp" data-wow-delay="0.2s"><a href="https://wa.me/<375292769473>"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+					 	<li class="wow fadeInUp" data-wow-delay="0.3s"><a href="mailto:eugenykovalkov@gmail.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					 	<li class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://t.me/black777price"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+					 	<li class="wow fadeInUp" data-wow-delay="0.5s"><a href="https://www.instagram.com/eugeny_kovalkov"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					 </ul> 
 					 <h3 class="footer-title">MADE WITH LOVE</h3>
 					 <p class="footer-text">&#169;2019 design by <a href="https://vk.com/id140439300" class="footer-link">Eugeny Kovalkov</a></p>
@@ -303,6 +305,16 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <!-- SCRIPT SLIDER END -->
+
+    <!-- OTHER SCRIPT START -->
+    <script src='js/main.js'></script>
+    <script src="js/wow.min.js"></script>
+
+    <script>
+    	var wow = new WOW;
+    	wow.init();
+    </script>
+
     <script>
     	$(document).ready(function(){
   $('.testimonials-slider').slick({
@@ -313,5 +325,28 @@
 });
     </script>
 
+    <script type="text/javascript">
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});
+</script>
+
+    <!-- OTHER SCRIPT END -->
+    <!-- SCROLL UP START  -->
+    <a href="#" class="scrollup">Наверх</a>
+    <!-- SCROLL UP END -->
 </body>
 </html>
