@@ -447,6 +447,18 @@
   .post-link {
     margin-right: 10px;
   }
+  .form-btn {
+    font-size: 9px;
+  }
+  .main-form-block span {
+    font-size: 10px;
+  }
+  .main-form-block h3 {
+    font-size: 11px;
+  }
+  .form-input {
+    font-size: 18px;
+  }
 }
 /* кнопка скролла */
 .scrollup {
