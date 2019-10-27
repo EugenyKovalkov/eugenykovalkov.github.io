@@ -1,0 +1,462 @@
+/* INFO */
+.info {
+  padding: 10px 0;
+}
+/* Оформляем логотип и текст */
+.logo {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  display: inline-block;
+}
+.info-logo {
+  text-decoration: none;
+  color: #000;
+}
+.info-logo:hover {
+  text-decoration: none;
+  color: #000;
+}
+.line {
+  margin: 0 10px;
+  display: inline-block;
+  width: inherit;
+  background: #05f;
+  width: 2px;
+  height: 34px;
+}
+.info-text {
+  display: inline-block;
+}
+.info-text-logo {
+  font-size: 15px;
+  margin: 0;
+}
+/* оформляем кнопку "обратный звонок" */
+.info-btn {
+  margin-top: 8px;
+  padding: 3px 13px;
+  color: #05f;
+  border: none;
+  border: 1px solid #05f;
+  border-radius: 30px;
+  background-color: transparent;
+}
+.info-btn:hover {
+  color: #fff;
+  background-color: #05f;
+}
+.info-btn:active,
+.header-btn:focus,
+.header-btn:hover {
+  outline: none;
+}
+/* оформляем телефоны и почту */
+.phone-link {
+  display: inline-block;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+.phone-link:hover {
+  color: #000;
+  text-decoration: none;
+}
+.phone-link-icon {
+  display: inline-block;
+  float: right;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+.post-link {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+.post-link:hover {
+  color: #000;
+  text-decoration: none;
+}
+.post-link-icon {
+  display: inline-block;
+  float: right;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+/* Оформляем HEADER */
+.header {
+  background-color: #05f;
+  background-size: cover;
+}
+.menu {
+  text-align: right;
+}
+.menu__icon {
+  margin-top: 9px;
+  display: none;
+  width: 45px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+}
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+.menu__icon span:nth-child(2),
+.menu__icon span:nth-child(3) {
+  top: 13px;
+}
+.menu__icon span:nth-child(4) {
+  top: 26px;
+}
+.menu__links-item {
+  display: inline-block;
+  color: #fff;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 7px 4px 5px 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu__links-item:hover {
+  color: #fff;
+  background-color: #ff8500;
+  text-decoration: none;
+}
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.menu.menu_state_open .menu__icon span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.menu.menu_state_open .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.menu.menu_state_open .menu__links {
+  display: block;
+}
+@media screen and (max-width: 999px) {
+  .menu__icon {
+    display: inline-block;
+  }
+  .menu__links {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    top: unset;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+  }
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+/* Секция CONDITION */
+.condition {
+  padding: 120px 0 130px 0;
+  background: url(../img/condition/bg-mountains.jpg) center no-repeat;
+  background-size: cover;
+}
+.condition-block-title {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.condition-block-title span {
+  color: #fea93a;
+}
+.condition-block-text {
+  color: #fff;
+}
+/* оформляем форму */
+.main-form {
+  background: url(../img/condition/form.png) center no-repeat;
+}
+.main-form-block {
+  text-align: center;
+  padding: 38px 30px;
+}
+.main-form-block span {
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff8306;
+  border-radius: 24px;
+  padding: 6px 46px;
+}
+.main-form-block h3 {
+  margin: 20px 0 30px 0;
+  font-size: 16px;
+}
+.main-form-block strong {
+  color: #ff0009;
+}
+.form-input {
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 24px;
+  border: 1px solid rgba(135, 135, 135, 0.5);
+  padding: 10px 42px;
+}
+.form-input:focus,
+.form-input:active {
+  border-color: rgba(135, 135, 135, 0.9);
+  outline: none;
+}
+.form-btn {
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 18px;
+  background-color: #faa44e;
+  padding: 10px 42px;
+  margin-top: 42px;
+}
+.form-btn:focus {
+  outline: none;
+}
+.form-btn:hover {
+  background-color: #ff8306;
+}
+/* Секция SERVICES */
+.services {
+  padding: 60px 0 30px 0;
+  background: url(../img/services/blue-viev.jpg) center no-repeat;
+  background-size: cover;
+}
+.services-block {
+  text-align: center;
+}
+.services-block p {
+  margin-bottom: 50px;
+}
+.services-block-img {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 20px;
+}
+.services-block-title {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.services-block-text {
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+}
+/* Секция INFORMATION */
+.information {
+  padding: 70px 0 0 0;
+  background: url(../img/information/mountain.jpg) center no-repeat;
+  background-size: cover;
+}
+.information-line {
+  margin: 10px 0;
+  display: inline-block;
+  width: inherit;
+  background: #05f;
+  width: 65px;
+  height: 2px;
+}
+.videos {
+  padding: 60px 0;
+  width: 100%;
+}
+.videos_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.video_item {
+  padding-top: 56.25%;
+}
+.video_element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+}
+/* Секция Сertificates */
+.certificates {
+  padding: 60px 60px;
+  text-align: center;
+}
+.certificates-title {
+  font-size: 34px;
+}
+.certificates-line {
+  margin: 30px 0;
+  display: inline-block;
+  width: inherit;
+  background: #05f;
+  width: 65px;
+  height: 2px;
+}
+.certificate-block img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+/* Оформляем слайдер */
+.prev {
+  position: absolute;
+  z-index: 99;
+  width: 31px;
+  height: 21px;
+  border: none;
+  background: url(../img/certificates/left1.png) center no-repeat;
+  background-size: 70%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.prev:focus {
+  cursor: pointer;
+  outline: none;
+}
+.next {
+  position: absolute;
+  z-index: 99;
+  width: 31px;
+  height: 21px;
+  border: none;
+  background: url(../img/certificates/right2.png) center no-repeat;
+  background-size: 70%;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.next:focus {
+  cursor: pointer;
+  outline: none;
+}
+/* MEDIA */
+@media (max-width: 1199px) {
+  .info-text-logo {
+    font-size: 13px;
+  }
+  .info-btn {
+    font-size: 12px;
+  }
+  .phone-link {
+    font-size: 12px;
+  }
+  .post-link {
+    font-size: 11px;
+  }
+  .submenu-link {
+    font-size: 13px;
+  }
+  .menu__links-item {
+    font-size: 11px;
+  }
+  .form-btn {
+    font-size: 16px;
+  }
+  .form-input {
+    font-size: 12px;
+  }
+  .main-form-block h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .information-block {
+    margin-bottom: 50px;
+  }
+  .main-form-block h3 {
+    font-size: 14px;
+  }
+  .main-form-block h3 {
+    font-size: 12px;
+  }
+  .main-form-block {
+    padding: 10px 10px;
+  }
+  .form-btn {
+    font-size: 12px;
+  }
+  .main-form-block span {
+    font-size: 13px;
+  }
+  .form-input {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .services-block {
+    margin-bottom: 30px;
+  }
+  .main-form-block {
+    padding: 90px 58px;
+  }
+  .main-form-block span {
+    font-size: 21px;
+  }
+  .main-form-block h3 {
+    font-size: 16px;
+  }
+  .form-btn {
+    font-size: 18px;
+  }
+  .form-input {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .phone-link {
+    margin-right: 10px;
+  }
+  .post-link {
+    margin-right: 10px;
+  }
+}
+/* кнопка скролла */
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  text-indent: -9999px;
+  background: url('../img/icon_top.png') no-repeat;
+}
