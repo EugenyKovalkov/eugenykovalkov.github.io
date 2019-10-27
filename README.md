@@ -14,4 +14,4 @@
 
 [Сайт 6](https://eugenykovalkov.github.io/Full%20Stack%20Web%20Developer/src/index.html "Мое портфолио")
 
-[Сайт 6](https://eugenykovalkov.github.io/GREE%20site%20on%20bootstrap%204/src/index.html "Пара блоков для работодателя")
+[Сайт 7](https://eugenykovalkov.github.io/GREE%20site%20on%20bootstrap%204/src/index.html "Пара блоков для работодателя")
