@@ -139,7 +139,7 @@
 }
 /* Оформляем  section studio */
 .studio {
-  padding: 40px 77px;
+  padding: 40px 0;
 }
 .studio-title {
   margin: 32px 0 34px 0;
@@ -255,6 +255,14 @@
   }
   .advantages-text {
     padding-right: 0;
+  }
+}
+@media (max-width: 320px) {
+  .table-indication__cell {
+    font-size: 33px;
+  }
+  .table-indication thead {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
