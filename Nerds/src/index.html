@@ -12,6 +12,8 @@
 	<!-- Подключаем CSS Slick-slider -->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- Подключаем Map Yandex -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=42160be4-2253-4a62-be12-f25ecacdd527&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 	<header class="header">
@@ -59,7 +61,7 @@
 						<a class="advantages-link button-2" href="/">заказать</a>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-12">
+				<div class="col-lg-4 col-md-6">
 					<div class="advantages-block">
 						<img class="advantages-pic" src="img/advantages/illustration-3.png" alt="illustration-3">
 						<h3 class="advantages-title">Презентации</h3>
@@ -112,11 +114,91 @@
 			</div>
 			<div class="line-1"></div>
 			<div class="row">
+				<div class="col-lg-12">
+					<ul class="studio-client">
+
+						<li class="studio-client-item">
+							<a href="/" class="studio-client-link">
+								<img src="img/studio/logo-htmlacademy.png" alt="logo-htmlacademy" class="studio-client-pic">
+							</a>
+						</li>
+
+						<li class="studio-client-item">
+							<a href="/" class="studio-client-link">
+								<img src="img/studio/logo-borodinski.png" alt="logo-borodinski" class="studio-client-pic">
+							</a>
+						</li>
+
+						<li class="studio-client-item">
+							<a href="/" class="studio-client-link">
+								<img src="img/studio/logo-pink.png" alt="logo-pink" class="studio-client-pic">
+							</a>
+						</li>
+
+						<li class="studio-client-item">
+							<a href="/" class="studio-client-link">
+								<img src="img/studio/logo-mishka.png" alt="logo-mishka" class="studio-client-pic">
+							</a>
+						</li>
+
+					</ul>
+				</div>
 	
 			</div>
 			<div class="line-2"></div>
 		</div>
 	</section>
+	<section class="maps">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="map" style="width: 100%; height: 400px"></div>
+					<div class="maps-card">
+						<h5 class="maps-card-title">NЁRDS DESIGN STUDIO</h5>
+						<p class="maps-card-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+						<p class="maps-card-text-1">тел. +7 (812) 275-75-75</p>
+						<a href="/" class="maps-card-link">Напишите нам</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-12">
+					<ul class="footer-icon">
+						<li class="footer-icon-item">
+							<a href="" class="footer-icon-link">
+								<i class="fa fa-vk fa-2x"></i>
+							</a>
+						</li>
+
+						<li class="footer-icon-item">
+							<a href="" class="footer-icon-link">
+								<i class="fa fa-facebook fa-2x"></i>
+							</a>
+						</li>
+
+						<li class="footer-icon-item">
+							<a href="" class="footer-icon-link">
+								<i class="fa fa-instagram fa-2x"></i>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="col-lg-6 offset-lg-1 col-md-8 col-sm-12">
+					<div class="footer-block">
+						<h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+						<p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</footer>
 
 
 </body>
@@ -130,6 +212,8 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/slick-slider.js"></script>
+<!-- Подключаем Script Maps -->
+<script src="js/maps.js"></script>
 <!-- Подключаем Script для меню -->
 <script src="js/menu.js"></script>
 </html>

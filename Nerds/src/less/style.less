@@ -142,7 +142,7 @@
 }
 /* Оформляем  section studio */
 .studio{
-	padding: 40px 0;
+	padding: 40px 0 70px 0;
 }
 .studio-title{
 	margin: 32px 0 34px 0;
@@ -163,7 +163,7 @@
 }
 .studio-block-text{
 	font-size: 16px;
-	padding-left: 35px;
+	padding-left: 40px;
 }
 .studio-block-text:before{
 	height: 2px;
@@ -171,7 +171,7 @@
 	background-color:#fb565a;
 	display: block;    
     content: "";
-    transform: translate(-30px, 14px);
+    transform: translate(-35px, 14px);
 }
 .studio-card-pic{
 	width:100%;
@@ -209,6 +209,118 @@
 .table-indication__cell sup{
 	font-size:25px
 	}
+// Оформляем ul 
+.studio-client{
+	margin:0 auto;
+	padding:42px 0;
+	text-align:center;
+}
+.studio-client-item{
+	position:relative;
+	display:inline-block;
+	width:260px; 
+	list-style-type: none;
+}
+
+.studio-client-item:not(:nth-child(4n+4))::after{
+	content:"";
+	position:absolute;
+	width:2px;
+	height:50px;
+	right:-5px;
+	bottom:50%;
+	transform:translateY(50%);
+	background-color:#eee;
+}
+
+.studio-client-link{
+	display:block;
+	text-decoration: none;
+	color:currentColor;
+	opacity:.2;
+	transition:opacity .6s ease-in-out
+}
+.studio-client-link:hover{
+	text-decoration: none;
+	opacity:1
+}
+.studio-client-pic{
+	max-width:260px
+}
+// Оформляем maps
+#map{
+	position:relative;
+}
+.maps-card{
+	text-align:center;
+	position:absolute;
+	padding:54px 50px;
+	background-color:#fff;
+	top: 54px;
+	left: 140px
+}
+.maps-card-title{
+	font-size:18px;
+	font-family:Roboto Bold;
+}
+.maps-card-text{
+	font-size: 16px;
+}
+.maps-card-text-1{
+	margin-bottom: 30px
+}
+.maps-card-link{
+	font-size: 16px;
+	color:#fff;
+	padding:18px 42px;
+	background-color:#fb565a;
+	text-transform:uppercase;
+}
+.maps-card-link:hover{
+	color:#fff;
+	text-decoration: none;
+	background-color:#e74246;
+	transition: 1s;
+}
+
+
+// Оформляем footer
+.footer-icon{
+	margin: 0; 
+    padding: 4px; 
+}
+.footer-icon-item{
+	display: inline-block; 
+    margin-right: 13px; 
+}
+.footer-icon-link{
+	display:block;
+	width: 64px;
+    height: 64px;
+    line-height: 35px;
+    text-align: center;
+    color:#fff;
+	background-color: #e1e1e1;
+    border-radius: 35px;
+    font-size: 14px;
+}
+.footer-icon-link:hover{
+	color:#fff;
+	background-color: #e74246;
+	transition: 1s;
+}
+.footer-icon-link i{
+	transform: translate(0px, 17px);
+	}
+.footer{
+	padding:70px 0;
+}
+.footer-title{
+	font-size: 30px;
+	font-family: Roboto Bold;
+	font-weight: 700;
+    line-height: 36px;
+}
 
 @media (max-width: 1270px) {
 	.studio-title{
@@ -232,6 +344,20 @@
 	.studio-title{
 		font-size: 31px;
 	}
+	.studio-client-item {
+    width: 229px;
+    }
+    .footer-icon-item{
+    	margin-right:0;
+    }
+    .footer-title{
+    	font-size: 29px;
+    }
+    .maps-card{
+	padding:54px 50px;
+	top: 54px;
+	left: 100px
+}
 }
 
 @media (max-width: 1101px) {
@@ -264,6 +390,18 @@
 	.studio-card-pic{
 		margin-top:50px;
 	}
+	.company__table-indication{
+		text-align:center;
+		margin-left: 51px;
+	}
+	.maps-card{
+	padding:34px 20px;
+	top: 54px;
+	left: 70px;
+	}
+	.maps-card-link{
+	padding:11px 26px;
+	}
 }
 @media (max-width: 767px) {
 	.advantages-block{
@@ -273,7 +411,73 @@
 	.advantages-text{
 		padding-right:0;
 	}
+	.footer-icon{
+		text-align:center;
+		margin-bottom: 30px;
+	}
+	.footer-block{
+		text-align:center;
+	}
+	.company__table-indication{
+		text-align:center;
+		font-size: 12px;
+		margin-left: 33px;
+	}
+	.maps-card-title {
+    font-size: 12px;
+    }
+    .maps-card-text{
+    	font-size: 12px;
+    }
+    .maps-card-text-1{
+    	font-size: 12px;
+    }
+	.maps-card{
+	padding:14px 10px;
+	top: 54px;
+	left: 70px;
+	}
+	.maps-card-link{
+		font-size: 12px;
+	    padding:5px 9px;
+	}
 }
+@media (max-width: 575px) {
+    .company__table-indication{
+		margin-left: 50.5px;
+	}
+}
+@media (max-width: 540px) {
+    .maps-card{
+	padding:14px 10px;
+	top: 192px;
+	left: 60px;
+	}
+	.maps-card-text-1{
+	margin-bottom: 10px;
+	}
+}
+@media (max-width: 525px) {
+    .company__table-indication{
+		margin-left: 25px;
+	}
+}
+@media (max-width: 499px) {
+    .company__table-indication{
+		margin-left: 12.5px;
+	}
+}
+@media (max-width: 487px) {
+    .company__table-indication{
+		margin-left: 6px;
+	}
+}
+@media (max-width: 475px) {
+    .company__table-indication{
+		margin-left: 0px;
+	}
+}
+
 @media (max-width: 320px) {
 	.table-indication__cell{
 		font-size: 33px;
@@ -306,4 +510,6 @@
     text-align: left;
   }
 }
+
+
 
