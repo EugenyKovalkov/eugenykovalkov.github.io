@@ -176,13 +176,44 @@
 						<h5 class="maps-card-title">NЁRDS DESIGN STUDIO</h5>
 						<p class="maps-card-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
 						<p class="maps-card-text-1">тел. +7 (812) 275-75-75</p>
-						<a href="/" class="maps-card-link">Напишите нам</a>
+						<button class="maps-card-link popup-btn">Напишите нам</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!-- Модальное окно -->
+	<!-- Напишите нам -->
+	<div class="popup">
+		<!-- Окно (белое) -->
+		<div class="popup-dialog">
+			<!-- Содержимое -->
+			<div class="popup-content">
+				<h4 class="popup-header">
+					Напишите нам
+				</h4>
+				<button class="popup-close">&times;</button>
+				<div class="main-form">
+					<form action="#">
+						<ul class="form-list">
+							<li class="main-form-list">
+								<label for="#"><strong>Ваше имя:</strong></label>
+						        <input class="main-form-input"type="text" placeholder="Имя Фамилия">
+							</li>
+							<li class="main-form-list">
+								<label for="#"><strong>Ваш e-mail:</strong></label>
+						        <input class="main-form-input"type="text" placeholder="email@example.com">
+							</li>												
+						</ul>
+						<label class="main-label" for="#">Текст письма:</label>
+						<textarea class="main-form-text" name="" id="" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+						<button class="main-form-btn" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer class="footer">
 		<div class="container">
@@ -232,4 +263,5 @@
 <script src="js/maps.js"></script>
 <!-- Подключаем Script для меню -->
 <script src="js/menu.js"></script>
+<script src="js/popup-btn.js"></script>
 </html>
