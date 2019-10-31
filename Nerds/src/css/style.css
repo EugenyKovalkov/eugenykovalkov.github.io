@@ -622,6 +622,9 @@
   .company__table-indication {
     margin-left: 50.5px;
   }
+  .popup-content {
+    top: 0;
+  }
 }
 @media (max-width: 540px) {
   .maps-card {
