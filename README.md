@@ -18,4 +18,5 @@
 
 [Сайт 8](https://eugenykovalkov.github.io/Nerds/src/index.html "Карандаш Медиа")
 
+[Сайт 9](https://eugenykovalkov.github.io/StarWars%20Glo%20Academy/src/index.html "Glo Academy")
 
