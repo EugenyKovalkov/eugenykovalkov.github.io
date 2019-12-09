@@ -413,6 +413,10 @@ img {
 .contacts__phone {
   margin-right: 45px; }
 
+.contacts__button {
+  padding: 11px 21px;
+  letter-spacing: 0.3px; }
+
 .hero {
   position: relative;
   display: flex;
@@ -443,10 +447,7 @@ img {
     margin: 0;
     margin-bottom: 3rem; }
   .hero__button {
-    margin-right: 20px;
-    padding: 18px 28px; }
-    .hero__button .button--outline {
-      padding: 18px 46px; }
+    margin-right: 16px; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -462,7 +463,8 @@ img {
     bottom: 0;
     min-width: 17.6rem;
     min-height: 6.92rem;
-    font-size: 1rem;
+    font-size: 0.99rem;
+    letter-spacing: 0.3px;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
@@ -474,7 +476,7 @@ img {
       height: 29px;
       border: 1px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 17px; }
 
 .instagram {
   display: flex;
@@ -489,25 +491,36 @@ img {
     color: #E3B873;
     transform: rotate(90deg);
     line-height: 0.8;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    letter-spacing: -0.4px; }
     .instagram__link::after {
       content: '';
       width: 50px;
       height: 1px;
       background-color: #E3B873;
-      margin-left: 8px; }
+      margin-left: 14px; }
 
 .title {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
-  line-height: 1.4; }
+  line-height: 1.33;
+  letter-spacing: -0.13px; }
   .title--primary {
     color: #E3B873; }
 
+.hero .button--primary {
+  padding: 18px 25px;
+  letter-spacing: 0.3px; }
+
+.hero .button--outline {
+  padding: 17px 42px;
+  letter-spacing: 0.4px; }
+
 .types__section-title {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  letter-spacing: -0.7px; }
 
 .row {
   display: flex;
@@ -559,23 +572,16 @@ img {
   .card__pricetag {
     font-size: 1rem; } }
 
-@media screen and (max-width: 654px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
-  .card__text {
-    margin-left: 0; }
-  .design {
-    background-color: #131313; }
-    .design__section-title {
-      color: #ffffff; }
-    .design__card {
-      margin-bottom: 5.7rem; } }
-
 .design__section-title {
-  margin-bottom: 2.78rem; }
+  margin-bottom: 2.78rem;
+  letter-spacing: -0.7px; }
+
+.card__pricetag {
+  padding: 1.214rem 5.67rem 1.214rem 2.46rem; }
+
+.section-title__description {
+  font-size: 1.42rem;
+  line-height: 1.93rem; }
 
 @media screen and (max-width: 1223px) {
   html {
@@ -594,6 +600,21 @@ img {
     display: none; }
   .hero__content {
     margin-left: 0; } }
+
+@media screen and (max-width: 654px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card__text {
+    margin-left: 0; }
+  .design {
+    background-color: #131313; }
+    .design__section-title {
+      color: #ffffff; }
+    .design__card {
+      margin-bottom: 5.7rem; } }
 
 @media screen and (max-width: 570px) {
   .section-title__description {
