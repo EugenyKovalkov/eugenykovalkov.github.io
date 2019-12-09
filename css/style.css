@@ -630,6 +630,8 @@ img {
     display: none; }
   .hero__content {
     max-width: 22.86rem; }
+  .hero__title {
+    margin-bottom: 1.14rem; }
   .hero__text {
     font-size: 1.29rem;
     margin-bottom: 2.28rem; }
