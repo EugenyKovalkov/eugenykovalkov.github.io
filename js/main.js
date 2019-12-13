@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   document.body.addEventListener('click', (event) => {
     let target = event.target;
-    if (target.matches('.modal__close') || target.matches('#modal--window')) {
+    if (target.matches('.modal__close') || target.matches('#popup-window')) {
       switchModal();
     }
   });
