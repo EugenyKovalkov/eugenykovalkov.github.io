@@ -947,6 +947,11 @@ img {
     margin: 0 auto;
     margin-bottom: 65px;
     max-width: 925px; }
+  .footer__mapjs {
+    margin: 0 auto;
+    margin-bottom: 65px;
+    max-width: 925px;
+    height: 465px; }
   .footer__heading {
     margin: 0 auto;
     margin-bottom: 26px;
