@@ -350,7 +350,7 @@ template {
   font-size: 1.285rem;
   color: #ffffff;
   padding: 0.5rem 0; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #ffffff; }
 
 .policy__checkbox {
@@ -489,6 +489,9 @@ img {
   padding: 11px 21px;
   letter-spacing: 0.3px; }
 
+.requestCall {
+  animation: call 1.5s infinite; }
+
 .hero {
   position: relative;
   display: flex;
@@ -599,6 +602,9 @@ img {
   padding: 17px 43px;
   letter-spacing: 0.4px; }
 
+.projects {
+  padding-bottom: 360px; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
@@ -647,6 +653,109 @@ img {
 
 .swiper-slide .swiper-slide-active {
   width: 529px; }
+
+.control__section-title {
+  margin-bottom: 32px;
+  margin-top: -360px; }
+
+.control .section-title__heading {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  margin-bottom: 12px;
+  color: #ffffff; }
+
+.control .section-title__image::before {
+  height: 1px; }
+
+.control .section-title__image::after {
+  height: 1px;
+  margin: 0 8px; }
+
+.control__video {
+  position: relative;
+  display: flex;
+  margin: auto;
+  max-width: 817px;
+  min-height: 434px;
+  background: #131313 url("../img/video-mask.jpg") center no-repeat;
+  box-shadow: 0 20px 50px rgba(19, 19, 19, 0.15);
+  margin-bottom: 62px; }
+  .control__video::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 19, 19, 0.8); }
+
+.control__form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 769px;
+  margin: auto;
+  justify-content: space-between; }
+
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 39px; }
+
+.control .policy__label {
+  justify-content: center; }
+
+.control .video__play {
+  position: relative;
+  margin: auto; }
+
+.control__text {
+  display: flex;
+  margin: auto;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #363636;
+  max-width: 571px;
+  margin-bottom: 62px; }
+
+.control__line {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 27px; }
+  .control__line::after {
+    content: '';
+    width: 55px;
+    height: 2px;
+    border-radius: 30px;
+    background-color: #E3B873; }
+
+.control__input {
+  padding: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(19, 19, 19, 0.15); }
+
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__button {
+  padding: 0 61px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px; }
+
+.control .form__label {
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5); }
+
+.control .form__input {
+  color: #131313; }
+  .control .form__input::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+    color: #363636; }
 
 .types__section-title {
   margin-bottom: 2rem;
@@ -962,3 +1071,11 @@ img {
 @media screen and (max-width: 330px) {
   .types .card__title {
     font-size: 14px; } }
+
+@keyframes call {
+  from {
+    transform: scale(0.96); }
+  50% {
+    transform: scale(1); }
+  to {
+    transform: scale(0.96); } }
