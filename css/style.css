@@ -978,14 +978,14 @@ img {
   background: url("../img/icon_top.png") no-repeat; }
 
 .footer {
+  padding: 60px 0 0 0;
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
   .footer__wrap {
     margin-top: -360px;
     background-color: #181818;
     max-width: 883px;
-    margin: auto;
     padding: 34px;
-    margin-bottom: 52px; }
+    margin: -283px auto 52px; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
