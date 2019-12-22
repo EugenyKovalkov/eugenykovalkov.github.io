@@ -396,6 +396,8 @@ input.invalid {
     flex-basis: 31.4%; }
   .col-50 {
     width: 50%; }
+  .col-10 {
+    flex-basis: 26.4%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -887,6 +889,83 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.customers {
+  padding-bottom: 360px;
+  background: url(../img/customers/customers-bg.jpg) center no-repeat/cover; }
+  .customers__section-title {
+    margin-bottom: 70px; }
+  .customers .section-title__description {
+    max-width: 360px;
+    margin-top: 18px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #363636; }
+  .customers .card__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+  .customers .card__description {
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 180%;
+    color: #959595;
+    letter-spacing: -0.1px;
+    margin-bottom: 48px; }
+  .customers .card__price {
+    max-width: 294px;
+    min-height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #E3B873;
+    position: relative;
+    left: -20px; }
+  .customers .name__image {
+    border-radius: 38px;
+    margin-right: 23px; }
+  .customers .name__title {
+    text-transform: none;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 18px;
+    letter-spacing: 0.1px;
+    color: #181818; }
+  .customers .price {
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5); }
+    .customers .price__meters {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 10px; }
+      .customers .price__meters::after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: #ffffff; }
+      .customers .price__meters img {
+        margin-right: 15px; }
+    .customers .price__days {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .customers .price__days img {
+        margin-right: 14px; }
+    .customers .price__number {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      margin-right: 18px;
+      font-size: 17px;
+      line-height: 24px;
+      color: #ffffff; }
+
 .scrollup {
   width: 40px;
   height: 40px;
@@ -901,6 +980,7 @@ img {
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
   .footer__wrap {
+    margin-top: -360px;
     background-color: #181818;
     max-width: 883px;
     margin: auto;
