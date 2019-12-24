@@ -35,7 +35,7 @@ try {
     Вопрос клиента: ${userQuestion}";
 
     $mail->send();
-    header('Location: thanks.html');
+    echo "Письмо не отправлено";
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }

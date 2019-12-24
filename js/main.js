@@ -128,9 +128,22 @@ $(document).ready(function () {
   });
 
 });
-
-
-
+   //отлавливаем событие для  control-form
+  $('#control-form').on('submit', function name(event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "send.php",
+      data: $(this).serialize(),
+      success: function (response) {
+        console.log('Прибыли данные: ' + response);
+        $('#control-form').reset();
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        console.error(jqXHR + " " + textStatus);
+      }
+    });
+  });
   // маска для телефона
   $(document).ready(function () {
     $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
