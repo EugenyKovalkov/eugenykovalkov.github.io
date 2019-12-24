@@ -34,8 +34,11 @@ try {
     $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail} 
     Вопрос клиента: ${userQuestion}";
 
-    $mail->send();
-    echo "Письмо не отправлено";
+    if ($mail->send()) {
+        echo "ok";
+    } else {
+        echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
