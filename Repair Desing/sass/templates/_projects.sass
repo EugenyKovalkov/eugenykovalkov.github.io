@@ -1,0 +1,76 @@
+.projects
+  padding-top: 109px 
+  padding-bottom: 424px
+  background:  $dark url('../img/projects/bg-projects.png') center no-repeat / cover
+  .section-title
+    &__heading
+      font-family: 'Yeseva One'
+      font-style: normal
+      font-weight: normal
+      font-size: 27px
+      line-height: 37px
+      letter-spacing: -0.07em
+      text-transform: uppercase
+    &__text
+      margin-bottom: 27px
+  .swiper-container-horizontal> .swiper-pagination-bullets
+    width: auto
+    bottom: 0
+.swiper
+  &-slide
+    &--down
+      margin-bottom: 60px
+    &__wrap
+      display: flex
+      height: 108px
+    &-image
+      margin-top: -13rem
+    &__value
+      letter-spacing: 0.4px
+      line-height: 20px
+    &__text
+      flex-basis: 34%
+      margin-bottom: 20px
+      &:last-of-type
+        margin-bottom: 7.2rem
+    &__heading
+      font-size: 1.285rem
+      line-height: 1.78rem
+      font-family: 'Yeseva one', cursive
+      color: $primary
+      font-style: normal
+      font-weight: normal
+      text-transform: uppercase
+      margin-bottom: 5px
+  &-pagination
+    &-bullet
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+  &-button
+    &-prev, &-next
+      bottom: 0
+      top: auto
+      background-size: 42px
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+    &-prev
+      left: 0
+      background: url('../img/arrow-prev.svg') 
+    &-next
+      background: url('../img/arrow-next.svg') 
+.swiper-pagination-bullet 
+  width: 9px
+  height: 9px
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet 
+    margin: 0 8px
+.swiper-wrapper
+  .swiper-slide .swiper-slide-active
+    width: 679px
+
+
+
+
+      

@@ -1,0 +1,32 @@
+{
+  "name": "eugenykovalkov.github.io",
+  "version": "1.0.0",
+  "description": "[Сайт 1](https://eugenykovalkov.github.io/Github/RSE.by/index.html \"RSE.by\")",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugenyKovalkov/eugenykovalkov.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EugenyKovalkov/eugenykovalkov.github.io/issues"
+  },
+  "homepage": "https://github.com/EugenyKovalkov/eugenykovalkov.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlhint": "^3.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-htmlmin": "^5.0.1"
+  }
+}

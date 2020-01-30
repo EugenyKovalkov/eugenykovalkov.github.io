@@ -1,0 +1,117 @@
+.control 
+  padding: 48px 0 60px 0
+  margin-top: -403px 
+  &__section-title
+    margin-bottom: 32px
+  .section-title
+    &__heading
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 28px
+      text-align: center
+      text-transform: uppercase
+      letter-spacing: 0.1px
+      margin-bottom: 12px
+      color: $light
+    &__image
+      &::before
+        height: 1px
+      &::after
+        height: 1px
+        margin: 0 8px
+  &__video
+    position: relative
+    display: flex
+    margin: auto
+    max-width: 817px
+    min-height: 434px
+    background: $dark url('../img/video-mask.webp') center no-repeat
+    box-shadow: 0 20px 50px rgba($dark, 0.15)
+    margin-bottom: 62px
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: rgba($dark, 0.8)
+  &__form
+    display: flex
+    flex-wrap: wrap
+    max-width: 769px
+    margin: auto
+    justify-content: space-between
+  &__policy
+    position: relative
+    flex-basis: 100%
+    margin-top: 23px
+    margin-left: -32px
+    display: flex
+    flex-direction: column
+    align-items: center
+    .invalid
+      position: absolute
+      margin-top: 18px
+      order: 1 
+      font-size: 14px
+    .policy__checkbox
+      order: -1
+  .policy__label
+    justify-content: center
+  .video
+    &__play
+      position: relative
+      margin: auto
+      cursor: pointer
+  &__text
+    display: flex
+    margin: auto
+    font-size: 20px
+    line-height: 34px
+    text-align: center
+    color: #363636
+    max-width: 571px
+    margin-bottom: 62px
+  &__line
+    display: flex
+    justify-content: center
+    margin-bottom: 27px
+    &::after
+      content: ''
+      width: 55px
+      height: 2px
+      border-radius: 30px 
+      background-color: $primary
+  &__input
+    padding: 0
+    padding-bottom: 8px
+    border-bottom: 1px solid rgba($dark, 0.15)
+    outline: none
+  &__input-group
+    display: flex
+    flex-direction: column
+    flex-basis: 30%
+  &__button
+    width: 200px
+    height: 51px
+    font-weight: 500
+    font-size: 15px
+    line-height: 18px
+    outline: none
+    letter-spacing: 0.5px
+    &:hover
+      background-color: rgba($primary, 0.9)
+
+  .form
+    &__label
+      font-size: 15px
+      line-height: 20px
+      color: rgba(54, 54, 54, 0.5)
+    &__input
+      color: $dark
+      &::placeholder
+        font-size: 18px
+        line-height: 24px
+        color: #363636
+
+

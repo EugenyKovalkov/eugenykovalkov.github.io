@@ -1,0 +1,112 @@
+.six-steps
+  padding: 393px 0 500px
+  background: $dark url('../img/six-steps/bg-six-steps.png') no-repeat center / cover
+  .wrap--down
+    margin-bottom: 49px
+.section-title
+  margin-top: 19px
+  &__heading
+    font-family: 'Yeseva One'
+    font-size: 27px
+    line-height: 37px
+    text-transform: uppercase
+    margin-top: 16px
+    letter-spacing: 0.1px
+  &__pro
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 92px
+        height: 1px
+        background-color: $primary
+        margin-left: 87px
+  &__top
+    font-weight: 500
+    font-size: 15px
+    line-height: 21px
+    text-transform: uppercase
+    letter-spacing: 0.6px
+
+.swiper-slide
+  &__image
+    margin-top: 0
+  &__tex
+    margin-top: 62px
+    margin-bottom: 90px
+    flex-basis: 52%
+  &__counter
+    font-family: 'Yeseva One'
+    font-size: 18px
+    line-height: 25px
+    text-transform: uppercase
+  &__title
+    font-family: 'Yeseva One'
+    font-size: 15px
+    line-height: 23px
+    text-transform: uppercase
+    color: $primary
+    margin: 19px 0 10px 0
+  &__description
+    max-width: 337px
+    margin: 0 0 12px 
+    font-size: 15px
+    line-height: 25px
+  &-pagination
+    &-bullet
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+  &-button
+    &-prev, &-next
+      bottom: 0
+      top: auto
+      background-size: 42px
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+    &-prev
+      left: 0
+      background: url('../img/arrow-prev.svg') 
+    &-next
+      background: url('../img/arrow-next.svg') 
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: -1px
+.swiper-slide .swiper-slide-active
+  width: 529px
+.wrap--down
+
+.wrap
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-bottom: 40px
+  &__shell
+    display: flex
+    flex-direction: column
+    flex-basis: 18.6%
+    &:hover
+      cursor: pointer
+  .shell
+    color: $light
+    opacity: 0.3
+    &__number
+      display: grid
+      font-family: 'Yeseva One'
+      font-size: 15px
+      line-height: 21px
+      text-transform: uppercase
+      margin-bottom: 10px
+      &::after
+        content: ' '
+        width: 16px
+        height: 1px
+        background-color: $primary
+    &__stages
+      font-size: 15px
+      line-height: 18px
+  .active
+    opacity: 1
