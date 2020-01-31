@@ -20,3 +20,5 @@
 
 [Сайт 9](https://eugenykovalkov.github.io/StarWars%20Glo%20Academy/src/index.html "Glo Academy")
 
+[Сайт 10](https://eugenykovalkov.github.io/Repair%20Desing/index.html "Glo Academy")
+
