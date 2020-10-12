@@ -65,12 +65,14 @@ body{
 
 .link-img{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 40px;
 }
 .link-img-block{
-  max-width: 33%;
+  max-width: 19%;
+  margin-bottom: 10px;
   border: 1px solid rgb(255, 255, 51);
   box-shadow: 0 0 15px rgb(255, 255, 51, 0.5);
 }
@@ -81,7 +83,7 @@ body{
 .images-width img{
   height: auto;
   width: 100%;
-  max-width: 300px;
+  max-width: 168px;
 }
 
 .link{
@@ -91,6 +93,7 @@ body{
 
 .link a {
   color: #169664;
+  font-size: 12px;
   font-weight: bold;
   padding: 10px 20px;
   background-color: rgb(255, 255, 51);
@@ -127,7 +130,6 @@ body{
   display:inline-block;
   color:#ffffff;
   padding:10px;
-  margin:10px;
   cursor:pointer;
   font-weight:300;
  }
@@ -146,12 +148,12 @@ body{
   font-weight:300;
  }
  .mymagicoverbox_fenetreinterieur {
-  overflow:auto;
+  overflow-y: scroll;
+  height: 500px;
   padding:10px;
   background-color:#00A162;
   color: rgb(255, 255, 51);
   font-weight:400;
-  margin-top:10px
  }
  .mymagicoverbox_fermer {
   margin-top: 30px;
@@ -443,18 +445,35 @@ a.lightzoom {
     text-align: left;
   }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 961px) {
   .link-img{
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .link-img-block{
-    max-width: 100%;
-    margin:  0 auto;
-    margin-bottom: 20px;
+    max-width: 30%;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .link-img{
+    flex-wrap: wrap;
+  }
+  .link-img-block{
+    max-width: 48%;
+  }
+  .link a {
+    font-size: 9px;
+    padding: 10px 10px;
   }
   .images-width img {
     max-width: 180px;
   }
+  .mymagicoverbox_fenetre {
+    top: 0px;
+}
 }
 
 @media screen and (max-width: 320px) {
