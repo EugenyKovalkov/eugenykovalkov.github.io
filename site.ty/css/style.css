@@ -471,10 +471,7 @@ a.lightzoom {
   .images-width img {
     max-width: 180px;
   }
-  .mymagicoverbox_fenetre {
-    top: 0px;
-}
-}
+
 
 @media screen and (max-width: 320px) {
   .images-width img{
