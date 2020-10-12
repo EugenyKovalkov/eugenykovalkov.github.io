@@ -448,8 +448,12 @@ a.lightzoom {
     flex-direction: column;
   }
   .link-img-block{
-    max-width: 90%;
+    max-width: 100%;
     margin-bottom: 20px;
+    margin:  0 auto;
+  }
+  .images-width img {
+    max-width: 180px;
   }
 }
 
