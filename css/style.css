@@ -1,1259 +1,463 @@
-@font-face {
-  font-family: 'Futura Book';
-  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: wrap; }
-
-@font-face {
-  font-family: 'Futura Demi';
-  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: wrap; }
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0; }
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block; }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent; }
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */ }
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder; }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%; }
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sub {
-  bottom: -0.25em; }
-
-sup {
-  top: -0.5em; }
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none; }
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */ }
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible; }
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none; }
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em; }
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */ }
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline; }
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto; }
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */ }
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */ }
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block; }
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item; }
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none; }
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none; }
-
-.button {
-  padding: 11px 24px;
-  border: none;
-  border-radius: 2px;
-  text-transform: uppercase;
-  font-size: 0.93rem; }
-  .button:hover {
-    cursor: pointer; }
-  .button--primary {
-    background-color: #E3B873;
-    color: #ffffff;
-    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
-    transition: box-shadow 0.3s; }
-    .button--primary:hover {
-      box-shadow: none; }
-  .button--outline {
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    color: #ffffff; }
-
-.label {
-  font-family: 'Futura Book', cursive;
-  font-size: 1.07rem; }
-  .label--light {
-    color: rgba(255, 255, 255, 0.5); }
-
-.input {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  font-size: 1.285rem;
-  color: #ffffff;
-  padding: 0.5rem 0; }
-  .input--light::placeholder {
-    color: #ffffff; }
-
-.policy__checkbox {
-  opacity: 0;
-  visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before {
-    background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
-
-.policy__label {
-  display: flex;
-  align-items: center;
-  font-size: 16px; }
-  .policy__label::before {
-    content: '';
-    height: 18px;
-    width: 18px;
-    border: 1px solid #E3B873;
-    border-radius: 1px;
-    cursor: pointer;
-    margin-right: 0.64rem; }
-  .policy__label--center {
-    justify-content: center; }
-
-div.invalid {
-  color: tomato; }
-
-input.invalid {
-  border-bottom: 1px solid tomato; }
-
-.container {
-  width: 85%;
-  max-width: 1256px;
-  margin: auto; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  width: 90%; }
-  .col-30 {
-    flex-basis: 31.4%; }
-  .col-50 {
-    width: 50%; }
-  .col-10 {
-    flex-basis: 26.4%; }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-html {
-  font-size: 14px; }
-
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 1rem; }
-
-img {
-  max-width: 100%; }
-
-.section {
-  padding: 60px 0; }
-  .section--dark {
-    background-color: #131313;
-    color: #ffffff; }
-  .section-title {
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color:  #00A162;
+   
+}
+.container{
+    max-width: 1200px;
+    background-color:#007d4c;
+    padding: 20px;
+    margin: 0 auto;
+}
+.header-text{
     text-align: center;
-    line-height: 138.6%; }
-    .section-title--left {
-      text-align: left; }
-    .section-title__heading {
-      font-family: 'Yeseva One', cursive;
-      text-transform: uppercase;
-      line-height: 138.6%;
-      letter-spacing: -1.1px;
-      font-size: 26px; }
-      .section-title__heading--primary {
-        color: #E3B873; }
-    .section-title__word {
-      display: flex;
-      align-items: center; }
-      .section-title__word::after {
-        content: '';
-        width: 92px;
-        height: 1px;
-        background-color: #E3B873;
-        margin-left: 2.4rem; }
-    .section-title__text {
-      font-size: 1.28rem;
-      line-height: 2.07rem;
-      max-width: 31.57rem;
-      margin-bottom: 2.14rem; }
-    .section-title__image {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .section-title__image::before, .section-title__image::after {
-        content: '';
-        width: 32px;
-        height: 2px;
-        background-color: #E3B873;
-        margin: 0 10px; }
-    .section-title__description {
-      font-size: 1.07rem;
-      line-height: 135.84%;
-      margin: auto;
-      margin-top: 1.64rem;
-      max-width: 48rem; }
+    color: rgb(255, 255, 51);
+    margin: 20px 0 20px 0;
+}
+.text-1 h2{
+  text-align: center;
+  color: rgb(255, 255, 51);
+  margin: 0 0 20px 0;
+}
+.text-1 p{
+  color: rgb(255, 255, 51);
+}
 
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  background-color: #131313;
-  padding: 24px 0; }
+.text-2 h2{
+  text-align: center;
+  color: rgb(255, 255, 51);
+  margin: 20px 0 20px 0;
+}
+.text-2 p{
+  color: rgb(255, 255, 51);
+}
 
-.menu {
+.text-3 h2{
+  text-align: center;
+  color: rgb(255, 255, 51);
+  margin: 20px 0 20px 0;
+}
+.text-3 p{
+  color: rgb(255, 255, 51);
+} 
+
+.group-1{
+  text-align: center;
+  color: rgb(255, 255, 51);
+  margin: 20px 0 20px 0;
+  text-transform: uppercase;
+}
+.group-2{
+  text-align: center;
+  color: rgb(255, 255, 51);
+  margin: 20px 0 20px 0;
+  text-transform: uppercase;
+}
+.group-3{
+  text-align: center;
+  color: rgb(255, 255, 51);
+  margin: 20px 0 20px 0;
+  text-transform: uppercase;
+}
+
+.link-img{
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.link-img-block{
+  max-width: 33%;
+  border: 1px solid rgb(255, 255, 51);
+  box-shadow: 0 0 15px rgb(255, 255, 51, 0.5);
+}
+.images-width{
+  text-align: center;
+  margin: 15px 15px;
+}
+.images-width img{
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+}
 
-.logo {
-  font-size: 1.075rem;
-  color: #E3B873;
-  text-transform: uppercase; }
+.link{
+  text-align: center;
+  margin: 20px;
+}
 
-.nav__item {
-  color: #ffffff;
+.link a {
+  color: #169664;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 51);
+  text-transform: uppercase;
   text-decoration: none;
-  text-transform: uppercase;
-  margin-right: 2.5rem;
-  transition: color 0.2s; }
-  .nav__item:hover {
-    color: #E3B873; }
+  border-radius: 3px;
+  border: 1px solid rgb(255, 255, 51);
+}
+.link a:hover {
+  color: rgb(255, 255, 51);
+  background-color: #00b36d;
+  border: 1px solid rgb(255, 255, 51);
+  transition: 0.6s;
+}
 
-.phone {
-  color: #E3B873; }
-
-.contacts__phone {
-  margin-right: 45px; }
-
-.contacts__button {
-  padding: 11px 21px;
-  letter-spacing: 0.3px; }
-
-.requestCall {
-  animation: call 1.5s infinite; }
-
-.hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 100px;
-  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
-  height: 100vh;
-  color: #ffffff; }
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(19, 19, 19, 0.5); }
-  .hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 3.46rem;
-    background: #131313; }
-  .hero__content {
-    position: relative;
-    max-width: 47.85rem;
-    margin-left: 4.28rem; }
-  .hero__text {
-    font-size: 1.57rem;
-    max-width: 500px;
-    line-height: 131%;
-    margin: 0;
-    margin-bottom: 48px; }
-  .hero__button {
-    margin-right: 16px; }
-  .hero__instagram {
-    position: absolute;
-    left: 0;
-    top: 0;
-    max-width: 82px;
-    height: 100%; }
-  .hero__scroll-down {
-    position: absolute;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    bottom: 0;
-    min-width: 17.6rem;
-    min-height: 6.92rem;
-    font-size: 0.87rem;
-    font-family: 'Yeseva One';
-    background-color: #131313;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff; }
-    .hero__scroll-down::after {
-      content: '';
-      background: url(../img/arrow-down.svg) no-repeat center;
-      width: 29px;
-      height: 29px;
-      border: 1px solid #E3B873;
-      border-radius: 50%;
-      margin-left: 17px; }
-
-.instagram {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #131313; }
-  .instagram__link {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #E3B873;
-    transform: rotate(90deg);
-    line-height: 0.8;
-    font-size: 1.1rem;
-    letter-spacing: -0.4px; }
-    .instagram__link::after {
-      content: '';
-      width: 50px;
-      height: 1px;
-      background-color: #E3B873;
-      margin-left: 14px; }
-
-.title {
-  margin: 0;
-  margin-bottom: 1.36rem;
-  font-family: 'Yeseva One', cursive;
-  text-transform: uppercase;
-  font-size: 2.86rem;
-  line-height: 1.33;
-  letter-spacing: -0.13px; }
-  .title--primary {
-    color: #E3B873; }
-
-.hero .button--primary {
-  padding: 18px 25px;
-  letter-spacing: 0.3px; }
-
-.hero .button--outline {
-  padding: 17px 43px;
-  letter-spacing: 0.4px; }
-
-.projects {
-  padding-bottom: 360px; }
-
-.swiper-slide {
-  display: flex;
-  flex-wrap: wrap; }
-  .swiper-slide-image {
-    margin-top: -13rem; }
-  .swiper-slide__value {
-    letter-spacing: 0.4px;
-    line-height: 20px; }
-  .swiper-slide__text {
-    flex-basis: 34%;
-    margin-bottom: 1.21rem; }
-    .swiper-slide__text:last-of-type {
-      margin-bottom: 7.2rem; }
-  .swiper-slide__heading {
-    font-size: 1.285rem;
-    line-height: 1.78rem;
-    font-family: 'Yeseva one', cursive;
-    color: #E3B873;
-    text-transform: uppercase;
-    margin-bottom: 0.52rem; }
-
-.swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
-  .swiper-pagination-bullet-active {
-    background-color: #ffffff; }
-
-.swiper-button-prev, .swiper-button-next {
-  bottom: 0;
-  top: auto;
-  background-size: 42px;
-  width: 42px;
-  height: 14px; }
-  .swiper-button-prev::after, .swiper-button-next::after {
-    display: none; }
-
-.swiper-button-prev {
-  left: 0;
-  background: url("../img/arrow-prev.svg"); }
-
-.swiper-button-next {
-  background: url("../img/arrow-next.svg"); }
-
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  width: auto;
-  bottom: -1px; }
-
-.swiper-slide .swiper-slide-active {
-  width: 529px; }
-
-.control__section-title {
-  margin-bottom: 32px;
-  margin-top: -360px; }
-
-.control .section-title__heading {
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.1px;
-  margin-bottom: 12px;
-  color: #ffffff; }
-
-.control .section-title__image::before {
-  height: 1px; }
-
-.control .section-title__image::after {
-  height: 1px;
-  margin: 0 8px; }
-
-.control__video {
-  position: relative;
-  display: flex;
-  margin: auto;
-  max-width: 817px;
-  min-height: 434px;
-  background: #131313 url("../img/video-mask.jpg") center no-repeat;
-  box-shadow: 0 20px 50px rgba(19, 19, 19, 0.15);
-  margin-bottom: 62px; }
-  .control__video::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(19, 19, 19, 0.8); }
-
-.control__form {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 769px;
-  margin: auto;
-  justify-content: space-between; }
-
-.control__policy {
-  flex-basis: 100%;
-  margin-top: 39px; }
-
-.control .policy__label {
-  justify-content: center; }
-
-.control .video__play {
-  position: relative;
-  margin: auto; }
-
-.control__text {
-  display: flex;
-  margin: auto;
-  font-size: 20px;
-  line-height: 34px;
-  text-align: center;
-  color: #363636;
-  max-width: 571px;
-  margin-bottom: 62px; }
-
-.control__line {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 27px; }
-  .control__line::after {
-    content: '';
-    width: 55px;
-    height: 2px;
-    border-radius: 30px;
-    background-color: #E3B873; }
-
-.control__input {
-  padding: 0;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(19, 19, 19, 0.15); }
-
-.control__input-group {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%; }
-
-.control__button {
-  padding: 0 61px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px; }
-
-.control .form__label {
-  font-size: 15px;
-  line-height: 20px;
-  color: rgba(54, 54, 54, 0.5); }
-
-.control .form__input {
-  color: #131313; }
-  .control .form__input::placeholder {
-    font-size: 18px;
-    line-height: 24px;
-    color: #363636; }
-
-.types__section-title {
-  margin-bottom: 2rem;
-  letter-spacing: -0.7px; }
-
-.section-title__heading {
-  margin-bottom: 13px;
-  font-size: 20px;
-  letter-spacing: 0.1px; }
-
-.card__image {
-  display: block;
-  width: 100%; }
-
-.card__text {
-  position: relative;
-  max-width: 23.6rem;
-  margin: 0 auto;
-  margin-top: -9.2rem;
-  padding: 1.79rem 2.1431rem;
-  background-color: #ffffff;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
-
-.card__title {
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.29rem;
-  margin-top: 0;
-  margin-bottom: 0.7rem; }
-
-.card__list {
-  padding: 0 0 0 1rem;
-  margin: 0;
-  font-size: 1.07rem;
-  line-height: 1.79rem;
-  color: #959595;
-  margin-bottom: 29px; }
-
-.card__pricetag {
-  position: absolute;
-  left: 0;
-  font-size: 1.29rem;
-  font-family: 'Yeseva One', cursive;
-  text-transform: uppercase;
-  background-color: #E3B873;
-  color: #ffffff;
-  padding: 1.3rem 2.6rem; }
-
-@media screen and (max-width: 731px) {
-  .card__pricetag {
-    font-size: 1rem; } }
-
-.design__card {
-  width: 94%; }
-  .design__card__text {
-    width: 90%; }
-
-.design .card__pricetag {
-  padding: 17px 79px 17px 33px; }
-
-.design__section-title {
-  margin-bottom: 2.78rem;
-  letter-spacing: -0.7px; }
-
-.section-title__description {
-  font-size: 1.42rem;
-  line-height: 1.93rem; }
-
-.modal {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
+.line{
+  height: 2px;
   width: 100%;
-  height: 100%;
-  background-color: rgba(19, 19, 19, 0.6);
-  z-index: 199;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .modal--visible {
-    opacity: 1;
-    visibility: visible; }
-  .modal__dialog {
-    position: relative;
-    max-width: 36.36rem;
-    background: #131313 url("../img/bg-lines.svg") no-repeat center;
-    padding: 2.36rem 3.5rem 1.93rem 3.5rem;
-    color: #ffffff; }
-  .modal__close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 28px;
-    height: 28px;
-    background: transparent;
-    background: url("../img/close.svg") no-repeat center;
-    border: none;
-    margin: 14px;
-    cursor: pointer;
-    outline: none; }
-  .modal__title {
-    font-family: 'Yeseva One', cursive;
-    font-size: 1.36rem;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 2.43rem; }
-  .modal__form {
-    display: flex;
-    flex-direction: column; }
-  .modal__input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3.42rem; }
-  .modal__input:last-of-type {
-    margin-bottom: 1.27rem; }
-  .modal__policy {
-    margin-bottom: 2.7rem; }
-  .modal__button {
-    align-self: flex-end; }
+  background-color:   rgb(255, 255, 51);
+  box-shadow: 0 0 15px rgb(255, 255, 51, 0.5);
+  margin-bottom: 20px;
+}
 
-.customers {
-  padding-bottom: 360px;
-  background: url(../img/customers/customers-bg.jpg) center no-repeat/cover; }
-  .customers__section-title {
-    margin-bottom: 70px; }
-  .customers .section-title__description {
-    max-width: 360px;
-    margin-top: 18px;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #363636; }
-  .customers .card__name {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; }
-  .customers .card__description {
-    font-family: FuturaBookC;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 180%;
-    color: #959595;
-    letter-spacing: -0.1px;
-    margin-bottom: 48px; }
-  .customers .card__price {
-    max-width: 294px;
-    min-height: 54px;
+.lines{
+  height: 2px;
+  width: 100%;
+  background-color:   rgb(255, 255, 51);
+  box-shadow: 0 0 15px rgb(255, 255, 51, 0.5);
+  margin: 20px 0;
+}
+/* кнопка читать описание */
+
+ .mymagicoverbox {
+  display:inline-block;
+  color:#ffffff;
+  padding:10px;
+  margin:10px;
+  cursor:pointer;
+  font-weight:300;
+ }
+ .mymagicoverbox_fenetre {
+  margin: 0 auto;
+  max-width: 1184px;
+  z-index:9999;
+  position:fixed;
+  top:100px;
+  display:none;
+  padding:5px;
+  background-color:rgb(255, 255, 51);
+  color:#97BF0D;
+  font-style:normal;
+  font-size:20px;
+  font-weight:300;
+ }
+ .mymagicoverbox_fenetreinterieur {
+  overflow:auto;
+  padding:10px;
+  background-color:#00A162;
+  color: rgb(255, 255, 51);
+  font-weight:400;
+  margin-top:10px
+ }
+ .mymagicoverbox_fermer {
+  margin-top: 30px;
+  color: #00A162;
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  float: right;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 51);
+  border: 1px solid #00A162;
+  border-radius: 3px;
+ }
+ .mymagicoverbox_fermer:hover{
+  background-color: #00A162;
+  color: rgb(255, 255, 51);
+  transition: 0.6s;
+  border: 1px solid rgb(255, 255, 51);
+
+ }
+
+ #myfond_gris {
+  display: none;
+  background-color:#000000;
+  opacity:0.7;
+  width:100%;
+  height:100%;
+  z-index:9998;
+  position:fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+ }
+
+
+.wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #E3B873;
-    position: relative;
-    left: -20px; }
-  .customers .name__image {
-    border-radius: 38px;
-    margin-right: 23px; }
-  .customers .name__title {
-    text-transform: none;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-    padding-top: 18px;
-    letter-spacing: 0.1px;
-    color: #181818; }
-  .customers .price {
-    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5); }
-    .customers .price__meters {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-left: 10px; }
-      .customers .price__meters::after {
-        content: '';
-        width: 1px;
-        height: 100%;
-        background-color: #ffffff; }
-      .customers .price__meters img {
-        margin-right: 15px; }
-    .customers .price__days {
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      .customers .price__days img {
-        margin-right: 14px; }
-    .customers .price__number {
-      font-family: Yeseva One;
-      font-style: normal;
-      font-weight: normal;
-      margin-right: 18px;
-      font-size: 17px;
-      line-height: 24px;
-      color: #ffffff; }
-
-.scrollup {
-  width: 40px;
-  height: 40px;
-  opacity: 0.3;
-  position: fixed;
-  bottom: 50px;
-  right: 100px;
-  display: none;
-  text-indent: -9999px;
-  background: url("../img/icon_top.png") no-repeat; }
-
-.footer {
-  padding: 60px 0 0 0;
-  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
-  .footer__wrap {
-    margin-top: -360px;
-    background-color: #181818;
-    max-width: 883px;
-    padding: 34px;
-    margin: -283px auto 52px; }
-  .footer__title {
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 46px; }
-  .footer__form {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 520px;
-    margin: auto;
-    justify-content: space-between; }
-  .footer__input {
-    padding-top: 1px; }
-    .footer__input-group {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 44.4%;
-      margin-bottom: 48px; }
-      .footer__input-group:last-child {
-        margin-bottom: 30px; }
-      .footer__input-group--full-width {
-        flex-basis: 100%; }
-  .footer__policy {
-    flex-basis: 100%;
-    margin-bottom: 33px; }
-  .footer__button {
-    margin: auto;
-    padding: 17px 60px;
-    font-size: 16px; }
-  .footer__menu {
-    background: #131313;
-    padding: 60px 0; }
-  .footer__map {
-    margin: 0 auto;
-    margin-bottom: 65px;
-    max-width: 925px; }
-  .footer__mapjs {
-    margin: 0 auto;
-    margin-bottom: 65px;
-    max-width: 925px;
-    height: 465px; }
-  .footer__heading {
-    margin: 0 auto;
-    margin-bottom: 26px;
-    text-align: center;
-    max-width: 551px; }
-  .footer .heading__txt {
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #E3B873; }
-  .footer__icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 43px; }
-    .footer__icon .message {
-      margin-right: 15px;
-      padding-top: 7px;
-      height: 28px;
-      width: 28px;
-      background-color: #E3B873;
-      border-radius: 14px; }
-    .footer__icon .instagramm {
-      padding-top: 6px;
-      height: 28px;
-      width: 28px;
-      background-color: #E3B873;
-      border-radius: 14px; }
-
-@media screen and (max-width: 1275px) {
-  html {
-    font-size: 12px; }
-  .nav__item {
-    margin-right: 1rem; } }
-
-@media screen and (max-width: 1063px) {
-  .card__text {
-    width: 90%; }
-  .card__title {
-    font-size: 15px; } }
-
-@media screen and (max-width: 992px) {
-  .nav {
-    display: none; }
-  .hero__instagram {
-    display: none; }
-  .hero__content {
-    margin-left: 0; }
-  .types .container {
-    width: 87%; }
-  .types .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 80px; }
-  .types .section-title__heading {
-    letter-spacing: 0.9px;
-    margin-bottom: 14px; }
-  .types__section-title {
-    margin-bottom: 40px; } }
-
-@media screen and (max-width: 767px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .card__text {
-    margin-left: 0; }
-  .design {
-    background-color: #131313; }
-    .design .container {
-      width: 87%; }
-    .design .card__text {
-      padding: 17px 29px;
-      margin-top: -135px;
-      max-width: 261px; }
-    .design .card__title {
-      letter-spacing: -0.4px;
-      font-size: 15px; }
-    .design .card__list {
-      font-size: 13px;
-      line-height: 169.8%;
-      margin-bottom: 24px;
-      letter-spacing: -0.3px; }
-    .design .card__pricetag {
-      padding: 9px 44px;
-      font-size: 15px;
-      letter-spacing: -0.3px;
-      line-height: 138.6%; }
-    .design__section-title {
-      color: #ffffff; }
-    .design__card {
-      margin-bottom: 5.7rem; }
-  .types .card__text {
-    max-width: 79%;
-    margin-top: -136px; }
-  .types .card__title {
-    font-size: 15px;
-    line-height: 99%;
-    letter-spacing: -0.4px; }
-  .types .card__item {
-    font-size: 13px;
-    line-height: 169.8%; }
-  .types .card__list {
-    margin-bottom: 23px; }
-  .types .card__pricetag {
-    font-size: 15px;
-    padding: 10px 30px;
-    letter-spacing: -0.3px; }
-  .projects {
-    padding: 36px 0; }
-    .projects .section-title {
-      margin-bottom: 36px; }
-      .projects .section-title__text {
-        display: contents; }
-    .projects .col-50 {
-      width: 90%; }
-    .projects .section-title {
-      text-align: center; }
-      .projects .section-title__word {
-        display: grid; }
-        .projects .section-title__word::after {
-          content: '';
-          width: 0;
-          height: 0;
-          margin-left: 0; }
-      .projects .section-title__text {
-        font-size: 14px;
-        line-height: 158.48%;
-        max-width: 305px;
-        letter-spacing: -0.1px; }
-      .projects .section-title__heading {
-        letter-spacing: -0.5px;
-        line-height: 144.6%; }
-    .projects .swiper-slide__text {
-      flex-basis: 50%; }
-      .projects .swiper-slide__text-image {
-        margin-top: -13rem; }
-  .col-50 .swiper-slide-image {
-    margin-top: 0; }
-  .end {
-    margin-top: 33px; }
-  .mobile-order-top {
-    order: -1; }
-  .swiper-slide__heading {
-    font-size: 14px;
-    line-height: 138.6%; }
-  .swiper-slide__value {
-    font-size: 14px;
-    line-height: 135.84%; } }
-
-@media screen and (max-width: 570px) {
-  .contacts__button {
-    display: none; }
-  .contacts__phone {
-    margin-right: 0;
-    color: #ffffff;
-    text-decoration: none; }
-  .title {
-    font-size: 1.64rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 339px; }
-  .hero__title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
-    line-height: 132.83%;
-    margin-bottom: 10px;
-    letter-spacing: -0.7px; }
-  .hero__text {
-    margin-bottom: 2.28rem;
-    font-size: 18px;
-    line-height: 135.84%; }
-  .hero__button {
+    margin-top: 50px;
+}
+.wrapper-img{
+    width: 50%;
+    padding: 10px;
+}
+.wrapper-text-header{
+    color: rgb(255, 255, 51);
+}
+.wrapper-text{
+    width: 50%;
+    background-color: #00A162; 
+    color: rgb(255, 255, 51);
+    padding: 10px;
+}
+.wrapper-img img{
+    width: 100%;
+    height: auto;
+}
+/* Для картинки */
+a.lightzoom {
+    cursor: zoom-in;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+  }
+  
+  #lz-container {
     display: block;
-    margin-bottom: 1.85rem; }
-  .hero .button--primary {
+    height: 100%;
     width: 100%;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: -0.1px; }
-  .hero .button--outline {
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 9999990 !important;
+  }
+  
+  #lz-box {
+    position: fixed;
+    height: 100%;
+    width: 100%; 
+    line-height: 1px;
+    text-align: center;
+    display: inline-block;
+    z-index: 9999998 !important;
+  }
+  
+  #lz-overlay {
+    display: block;
+    opacity: 1;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: -0.1px; }
-  .header .container {
-    width: 87%; }
-  .header .menu__logo {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.2px; } }
+    z-index: 9999991 !important;
+  }
+  
+  #lz-box:before {
+    content: "";
+    display: inline-block;
+    height: 50%;
+    background-size: 100%;
+  }
+  
+  #lz-box img {
+    float: none;
+    display: inline-block;
+    max-height: 80%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    opacity: 0;
+    position: relative;
+    z-index: 9999995 !important;
+  }
+  
+  #lz-box p {
+    position: relative;
+    bottom: 0;
+    margin-top: -30px;
+    margin-bottom: 0;
+    line-height: 20px;
+    font-size: 18px;
+    z-index: 9999997 !important;
+  }
+  
+  #lz-close {
+    display: block;
+    color:#ffffff;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    height: 51px;
+    padding: 5px;
+    opacity: 0.6;
+    z-index: 9999998 !important;
+  }
+  
+  #lz-close:hover {
+    opacity: 1;
+  }
+  
+  #loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 9999999 !important;
+  }
+  
+  #loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+  }
+  
+  .object {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    float: left;
+    margin-right: 20px;
+    margin-top: 65px;
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+  }
+  
+  #object_one {
+    -webkit-animation: object_one 1.5s infinite;
+    animation: object_one 1.5s infinite;
+  }
+  
+  #object_two {
+    -webkit-animation: object_two 1.5s infinite;
+    animation: object_two 1.5s infinite;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+  }
+  
+  #object_three {
+    -webkit-animation: object_three 1.5s infinite;
+    animation: object_three 1.5s infinite;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  
+  @-webkit-keyframes object_one {
+    75% {
+      -webkit-transform: scale(0);
+    }
+  }
+  
+  @keyframes object_one {
+    75% {
+      transform: scale(0);
+      -webkit-transform: scale(0);
+    }
+  }
+  
+  @-webkit-keyframes object_two {
+    75% {
+      -webkit-transform: scale(0);
+    }
+  }
+  
+  @keyframes object_two {
+    75% {
+      transform: scale(0);
+      -webkit-transform: scale(0);
+    }
+  }
+  
+  @-webkit-keyframes object_three {
+    75% {
+      -webkit-transform: scale(0);
+    }
+  }
+  
+  @keyframes object_three {
+    75% {
+      transform: scale(0);
+      -webkit-transform: scale(0);
+    }
+  }
+  /* Адаптивное меню */
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #4CAF50;
+  overflow: hidden;
+}
 
-@media screen and (max-height: 520px) {
-  .hero__scroll-down {
-    display: none; } }
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 51);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-@media screen and (max-width: 460px) {
-  .card__text {
-    max-width: 17.21rem; }
-  .card__list {
-    font-size: 0.98rem; } }
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 51);
+  color: #000;
+}
 
-@media screen and (max-width: 330px) {
-  .types .card__title {
-    font-size: 14px; } }
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #00A162;
+}
 
-@keyframes call {
-  from {
-    transform: scale(0.96); }
-  50% {
-    transform: scale(1); }
-  to {
-    transform: scale(0.96); } }
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .link-img{
+    flex-direction: column;
+  }
+  .link-img-block{
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .images-width img{
+    max-width: 150px;
+  }
+  .link{
+    margin: 10px;
+  }
+}

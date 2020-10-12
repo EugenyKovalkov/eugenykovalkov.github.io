@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title>Страница с картинкой и текстом</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper-img">
+                <a href="img/viber-img.jpg" class="lightzoom"><img src="img/viber-img.jpg" alt="картинка" title="картинка"/></a>         
+            </div>
+            <div class="wrapper-text">
+                <h2 class="wrapper-text-header">Заголовок статьи</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi beatae error, quae neque sapiente debitis, assumenda illo quis sequi, laboriosam dolores iste iure vero expedita illum tempore labore temporibus suscipit est quam nisi! Qui placeat quia voluptatem doloremque voluptates itaque reiciendis, ipsum commodi delectus sit et aliquam. Perspiciatis accusamus, velit impedit obcaecati molestias reprehenderit earum magni provident, corrupti quaerat voluptas eligendi nostrum nobis. Sequi, voluptas inventore vel tenetur debitis explicabo? Fuga dolore voluptate eaque voluptatum dolor pariatur, tenetur provident, voluptates ab facilis nostrum rem quas aliquam? Unde iure ullam laudantium quidem magnam, distinctio, libero aut dignissimos exercitationem rem molestias? Id?</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/lightzoom.js"></script>
+    <script type="text/javascript">
+        jQuery('.lightzoom').lightzoom(
+            {
+              speed:                 400,   // скорость появления
+              imgPadding:            10,    // значение отступа у изображения
+              overlayOpacity:        '0.5', // прозрачность фона (от 0 до 1)
+              viewTitle:             true, // true, если надо показывать подпись к изобажению
+              isOverlayClickClosing: true, // true, если надо закрывать окно при клике по затемненной области
+              isWindowClickClosing:  true, // true, если надо закрывать окно при клике по любой области
+              isEscClosing:          true  // true, если надо закрывать окно при нажатии на кнопку Esc
+ }
+        );
+      </script>
+</body>
+</html>
