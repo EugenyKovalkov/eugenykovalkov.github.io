@@ -449,8 +449,8 @@ a.lightzoom {
   }
   .link-img-block{
     max-width: 100%;
-    margin-bottom: 20px;
     margin:  0 auto;
+    margin-bottom: 20px;
   }
   .images-width img {
     max-width: 180px;
