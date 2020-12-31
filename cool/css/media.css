@@ -1,0 +1,193 @@
+@media screen and (max-width: 1165px) {
+    .service{
+     justify-content: space-around;   
+    }
+    .contact-input{
+        width: 100%;
+    }
+   
+}
+
+@media screen and (max-width: 1110px) {
+    .about-us {
+        flex-direction: column;
+    }
+    .about-text{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+.about-text p {
+    max-width: 100%;
+}
+    .about-blocks{
+        width: 100%;
+    }
+
+    .about-text h2 {
+        text-align: center;
+    }
+
+    .about-text .bla-bla{
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 1050px) {
+    .navbar-menu-link {
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 966px) {
+    
+    .nav-up-menu{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+.navbar-menu-link {
+    font-size: 11px;
+}
+}
+
+@media screen and (max-width:783px){
+    .our-service p{
+        text-align: center;
+    }
+    .our-service h2{
+        text-align: center;
+    }
+    .service-block p{
+        text-align: inherit;
+    }
+}
+@media screen and (max-width: 767px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-text,.contact-form{
+        width: 100%;
+    }
+    .contact-text{
+        margin-bottom: 50px;
+    }
+    .contact-text h2{
+        text-align: center;
+    }
+    .contact-text p{
+        text-align: center;
+        max-width: none;
+    }
+    .contact-info{
+        max-width: none;
+        justify-content: space-around;
+    }
+    .contact-button-form{
+        width: auto;
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 585px){
+    .about-cases{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 581px){
+    .our-service h2{
+        font-size: 32px;
+    }
+    .header-line{
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .logo{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .navbar-menu{
+        flex-direction: column;
+    }
+    .navbar-menu-link{
+        margin-bottom: 10px;
+    }
+    .navigation {
+        width: 90%;
+    }
+    .logo
+    {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .contact {
+        background-image: url(/img/Rectangle.png);
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .our-service{
+        padding: 70px 0 55px 0;
+    }
+    .our-service h2{
+        margin-bottom: 51px;
+    }
+    .slider-my h1 {
+        text-align: center;
+        font-size: 23px;
+    }
+    .slider-my .slider-my-button {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 412px) { 
+    .our-service h2 {
+        font-size: 20px;
+    }
+    .service-block p {
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .service-block p {
+        font-size: 18px;
+    }
+    .contact-text h2 {
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+    .contact-text p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .contact-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info-phone{
+        margin-bottom: 25px;
+    }
+    .contact-input-message {
+        width: 98%;
+    }
+    .contact-button {
+        width: 238px;
+    }
+    .contact-input-message input {
+        padding: 15px 0 40px 0;
+    }  
+}
