@@ -1,0 +1,601 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F9F9F9;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1116px;
+    margin: 0 auto;
+    padding: 0 42px;
+}
+.header-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header{
+    padding-top: 22px;
+    padding-bottom: 31px;
+    background-color: #FFFFFF;
+}
+.header .text-logo{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+    color: #005FA3;
+    margin-left: 30px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* cтили для меню nav-up  by Eugene*/
+.navigation{
+   width: 60%;
+}
+.nav-up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+.nav-up-menu{
+    display: flex;
+    flex-direction: row;
+}
+.nav-up-menu a{
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-up-menu img{
+    margin-right: 7px;
+    margin-left: 8px;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navbar-menu-link
+  {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #222222;
+    display:inline;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+  }
+  .navbar-menu-link a{
+    color: #222222;
+    text-decoration: none;
+  }
+
+  .navbar-menu-link a:hover{
+      border-bottom: 2px solid #005FA3; 
+
+  }
+  
+  /* стили для слайдера */
+.first-screen{
+    background-image: url(/img/first-screen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 170px;
+    padding-bottom: 113px
+}
+.slider-my{
+    outline:none;
+    border: 1px solid rgba(0,0,0,0);;
+}
+.slider-my h1{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 66px;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+.slider-my .slider-my-button{
+    width: 270px;
+    height: 60px;
+    color:#FFFFFF;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #005FA3;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 120px;
+}
+
+
+.slider-my-button:hover{
+    background-color: #0674c2;
+}
+.slick-active {
+    outline: none;
+  }
+  .prev {
+    position: absolute;
+    z-index: 99;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: #FFFFFF;
+    opacity: 0.2;
+    bottom: -60px;
+    right: 60px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    cursor: pointer;
+    outline: none;
+  }
+  .prev:focus {
+    
+    background: #FFFFFF;
+    opacity: 0.4;
+  }
+  .next {
+    position: absolute;
+    z-index: 99;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: #FFFFFF;
+    opacity: 0.2;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    cursor: pointer;
+    outline: none;
+  }
+  .next:focus {
+    background: #FFFFFF;
+    opacity: 0.4;
+  }
+
+
+/* Стили для блока Наши услуги by Eugene */
+.our-service{
+    padding: 140px 0 110px 0;
+    background-color: #EBEBEB;
+}
+.our-service h2 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #333333;
+    margin-bottom: 102px;
+}
+.our-service p{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-block{
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.service-block img{
+    width: 100%;
+    height: 100%;
+}
+
+.service-block p{
+    position: absolute;
+    bottom: 45px;
+    left: 45px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    
+
+}
+.service-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .3s ease;
+  }
+  
+  .service-block:hover::before {
+    background-color: rgba(0,105,224,.3);
+  }
+
+
+/* Стили для блока О нас by Eugene */
+.about{
+    padding: 140px 0;
+    background-color: #FFFFFF;
+}
+.about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-text{
+    width: 49%;
+}
+.about-text h2{
+    color: #333333;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    margin-bottom: 60px;
+}
+
+.about-text h2 span{
+    color: #005FA3;
+}
+
+.about-text p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    max-width: 445px;
+}
+.about-text .bla-bla{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+}
+
+.about-blocks{
+    width: 49%;
+}
+.about-blocks-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-cases{
+    margin-bottom: 30px;
+    padding: 30px 108px 40px 40px;
+    background: #EBEBEB;
+    cursor: pointer;
+    color: #000000;
+}
+.about-cases span{
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.about-cases p{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    
+    margin-bottom: 47px;
+}
+
+.about-cases a{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #005FA3;
+}
+.about-cases:hover a,.about-cases:hover{
+    color: #ffffff;
+    background-color:#005FA3;
+}
+
+
+
+/* Стили для блока с формой обратной связи by Eugene  */
+.contact{
+    background-image: url(/img/Rectangle.png);
+    padding-top: 122px;
+    padding-bottom: 140px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-text, .contact-form{
+    width: 49%;
+    color: #FFFFFF;
+}
+.contact-text h2{
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.contact-text p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 80px;
+    max-width: 445px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 445px;
+}
+.contact-info-phone, .contact-info-mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact-info-phone img,.contact-info-mail img{
+    margin-right: 16px;
+}
+.contact-info-phone a,.contact-info-mail a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contact-info-phone a:hover,.contact-info-mail a:hover{
+    text-decoration: underline; 
+}
+
+.form-connection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px; 
+}
+
+.contact-input label{
+    font-size: 16px;
+    line-height: 22px;
+}
+.contact-input input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    color: #BDBDBD;
+    padding: 15px 0;
+    font-size: 21px;
+    line-height: 29px;
+
+}
+.contact-input-message{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input-message input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    color: #BDBDBD;
+    padding: 15px 0 84px 0;
+    font-size: 21px;
+    line-height: 29px;
+    margin-bottom: 50px;
+}
+
+.contact-button-form{
+    width: 100%;
+}
+.contact-button{
+    width: 270px;
+    height: 60px;
+    color:#FFFFFF;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #005FA3;
+    border: none;
+    float: right;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-button:hover{
+    background-color: #0674c2;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Стили для footer by Eugene  */
+ .footer{
+    background-color: #FFFFFF;
+ }
+ .footer-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 52px;
+ }
+ .copyright p,.developed p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+ }
+
+
+ .modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.6);
+    z-index: 199;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center; }
+    .modal__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .modal--visible {
+      opacity: 1;
+      visibility: visible; }
+    .modal__dialog {
+      position: relative;
+      width: 730px;
+
+      background: #F9F9F9;
+      padding: 40px 95px;
+      color: #ffffff; }
+    .modal__close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 28px;
+      height: 28px;
+      background: transparent;
+      background: url("/img/close.svg") no-repeat center;
+      border: none;
+      margin: 14px;
+      cursor: pointer;
+      outline: none; }
+    .modal__button {
+      align-self: flex-end;
+      outline: none; }
+    .modal__title{
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 69px;
+        color: #222222;
+    }
+
+
+
+
+    .form-connection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .modal-input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px; 
+        width: 45%;
+    }
+    
+    .modal-input label{
+        font-size: 16px;
+        line-height: 22px;        
+        color: #222222;
+    }
+    .modal-input input{
+        background: transparent;
+        outline: none;
+        border: none;
+        font-weight: 300;
+        font-size: 21px;
+        border-bottom: 1px solid #6F6F6F;
+        color: #BDBDBD;
+        padding: 15px 0;
+    
+    }
+    .modal-massege{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .modal-massege input{
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #6F6F6F;
+        color: #BDBDBD;
+        padding: 15px 0 84px 0;
+        font-size: 21px;
+        line-height: 29px;
+        margin-bottom: 50px;
+    }
+    .modal-massege label{
+        font-size: 16px;
+        line-height: 22px;        
+        color: #222222;
+    }
+    .modal-button{
+        width: 100%;
+    }
+    .button-send{
+        width: 270px;
+        height: 60px;
+        color:#FFFFFF;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        background-color: #005FA3;
+        border: none;
+        float: right;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .button-send:hover{
+        background-color: #0674c2;
+    }
+
