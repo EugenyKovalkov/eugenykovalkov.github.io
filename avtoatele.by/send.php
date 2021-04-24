@@ -33,11 +33,13 @@ try {
     Сообщение клиента: ${userMessage}";
 
     if ($mail->send()) {
-        header("location: thanks.html");
+        echo "ok";
     } else {
         echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
     }
-} 
+} catch (Exception $e) {
+    echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+}
 
 
 ?>
